@@ -14,6 +14,9 @@
         &--prev,&--next{
             .pagination__link{
                 border: 0;
+                &:hover{
+                    border: 0;
+                }
             }
         }
         &:last-child{

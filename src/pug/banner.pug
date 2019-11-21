@@ -10,11 +10,40 @@ html(lang="en")
         .wrapper
             include _header
             .banner
-                .banner__images.swiper-container
+                .banner__images.swiper-container.js-banner-slider
                     ul.banner__list.swiper-wrapper
                         li.banner__item.swiper-slide
                             a(href="")
                                 img(src="img/banner.png", alt="")
+                        li.banner__item.swiper-slide
+                            a(href="")
+                                img(src="img/banner.png", alt="")
+                        li.banner__item.swiper-slide
+                            a(href="")
+                                img(src="img/banner.png", alt="")
+                .banner__pagination.swiper-container.js-banner-pagination
+                    ul.banner__pagination-list.swiper-wrapper
+                        li.banner__pagination-item.swiper-slide
+                            .banner__pagination-image
+                                .banner__pagination-number 01
+                                img(src="img/pr/2.png", alt="")
+                                .banner__pagination-progress
+                                    span
+                            .banner__pagination-title Cплит система серия «Artis»
+                        li.banner__pagination-item.swiper-slide
+                            .banner__pagination-image
+                                .banner__pagination-number 02
+                                img(src="img/pr/2.png", alt="")
+                                .banner__pagination-progress
+                                    span
+                            .banner__pagination-title Cплит система серия «Fortis»
+                        li.banner__pagination-item.swiper-slide
+                            .banner__pagination-image
+                                .banner__pagination-number 03
+                                img(src="img/pr/2.png", alt="")
+                                .banner__pagination-progress
+                                    span
+                            .banner__pagination-title Серия «Axioma»
         include _footer
         script(src="js/jquery.min.js")
         script(src="js/ion.rangeSlider.min.js")

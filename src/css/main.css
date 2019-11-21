@@ -740,10 +740,23 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .pagination__item{margin-right:20px}
 .pagination__item--prev i{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
 .pagination__item--next .pagination__link,.pagination__item--prev .pagination__link{border:0}
+.pagination__item--next .pagination__link:hover,.pagination__item--prev .pagination__link:hover{border:0}
 .pagination__item:last-child{margin-right:0}
 .pagination__item.active .pagination__link{border:1px solid #9e0a0e;color:#9e0a0e}
 .pagination__link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:12px;border:1px solid #d1d3d4;color:#212529;font-size:12px;font-weight:600}
 .pagination__link:hover{border:1px solid #9e0a0e;color:#9e0a0e}
+.banner{margin-bottom:200px;position:relative}
+.banner__item a img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.banner__pagination{position:absolute;overflow:visible;right:240px;bottom:0}
+.banner__pagination-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:700px}
+.banner__pagination-item{height:120px;cursor:pointer}
+.banner__pagination-item.swiper-slide-thumb-active .banner__pagination-image{background:#fff;height:136px}
+.banner__pagination-item.swiper-slide-thumb-active .banner__pagination-number{color:#9e0a0e}
+.banner__pagination-image{position:absolute;bottom:0;left:0;width:100%;height:120px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:-webkit-gradient(linear,right top,left top,from(#e6e7e8),to(#d1d3d4));background-image:linear-gradient(270deg,#e6e7e8 0,#d1d3d4 100%)}
+.banner__pagination-number{position:absolute;top:20px;left:20px;color:#808284;font-size:12px;font-weight:600}
+.banner__pagination-progress{position:absolute;width:100%;height:4px;bottom:0;background-color:#808284}
+.banner__pagination-progress span{display:block;position:absolute;top:0;left:0;background-color:#9e0a0e;width:30%;height:100%}
+.banner__pagination-title{position:absolute;bottom:-24px;color:#212529;font-size:14px;font-weight:700;line-height:24px}
 @media screen and (min-width:769px){
 .primary__right-top-pagination{display:none}
 }

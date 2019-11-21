@@ -222,4 +222,52 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active').closest('.service__content-top').siblings('.service-tabs__content').find('.service-tabs__content-item').removeClass('active').eq($(this).index()).addClass('active');
     });
     /* service-tabs end */
+
+    /* slider banner */
+    var bannerProgress = $('.banner__pagination-item.swiper-slide-thumb-active .banner__pagination-progress span');
+    function bannerProgressStart(){
+        var autoplay = 7000;
+        bannerProgressStop();
+        bannerProgress.animate({
+            width: 100 + '%'
+        },autoplay,function(){
+            sliderBanner.slideNext();
+            bannerProgressStop();
+            bannerProgressStart();
+        });
+    }
+    function bannerProgressStop(){
+        bannerProgress = $('.banner__pagination-item.swiper-slide-thumb-active .banner__pagination-progress span');
+        bannerProgress.stop(true);
+        $('.banner__pagination-item .banner__pagination-progress span').stop(true);
+        $('.banner__pagination-item .banner__pagination-progress span').css({
+            width: 0
+        });
+    }
+
+    var sliderBannerThumb= new Swiper('.js-banner-pagination', {
+        slidesPerView: 3,
+        slideToClickedSlide: true,
+        allowTouchMove: false,
+        on: {
+            click: function(){
+                bannerProgressStart();
+            } 
+        }
+    });
+    
+    var sliderBanner = new Swiper('.js-banner-slider', {
+        thumbs: {
+            swiper: sliderBannerThumb
+        },
+        allowTouchMove: false,
+        loop: true,
+        speed: 500,
+        on: {
+            init: function(){
+                bannerProgressStart();
+            } 
+        }
+    });
+    /* slider banner end */
 });
