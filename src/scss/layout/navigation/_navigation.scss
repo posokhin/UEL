@@ -1,0 +1,46 @@
+.navigation{
+    &__list{
+        justify-content: space-between;
+    }
+    &__item{
+        &--next{
+            i{
+                transform: rotate(0);
+            }
+            .navigation__link{
+                span{
+                    margin-right: 40px;
+                    @include media(768){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        &--prev{
+            .navigation__link{
+                span{
+                    margin-left: 40px;
+                    @include media(768){
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &__link{
+        color: $base;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.21px;
+        @include media(768){
+            i{
+                width: 24px;
+            }
+        }
+        @include media(500){
+            span{
+                display: none;
+            }
+        }
+    }
+}

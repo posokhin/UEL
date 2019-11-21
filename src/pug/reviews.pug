@@ -23,6 +23,12 @@ html(lang="en")
                     .about__row.flex-wrap
                         .about__col.about__col--sidebar
                             include _aside
+                            ul.sidebar__list
+                                +sidebar('О бренде')
+                                +sidebar('Статьи')
+                                +sidebar('Отзывы', 'active')
+                                +sidebar('Референс-лист')
+                                +sidebar('Сертификаты')
                         .about__col.about__col--content
                             .about__content
                                 .detail-tabs__wrapper.about__tabs

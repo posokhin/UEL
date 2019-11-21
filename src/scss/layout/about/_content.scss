@@ -37,6 +37,12 @@
         @include media(768){
             padding: 20px;
         }
+        .b-back{
+            padding: 0 0 40px 0;
+        }
+        .navigation{
+            margin-top: 40px;
+        }
     }
     &__tabs{
         display: none;

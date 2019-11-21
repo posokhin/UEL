@@ -9,7 +9,7 @@
         }
         &--back{
             display: block;
-            background: url("img/icon/arrow-back.svg") no-repeat center/ cover;
+            background: url("img/icon/arrow-back.svg") no-repeat center/ contain;
             width: 36px;
             height: 30px;   
             transform: rotate(180deg);
@@ -96,9 +96,9 @@
     }
     &-info{
         display: block;
-        background: url("img/icon/info.svg") no-repeat center/cover;
+        background: url("img/icon/info.svg") no-repeat center/contain;
         min-width: 24px;
-        max-width: 24px;
+        width: 24px;
         height: 24px;      
     }
     &-check{
