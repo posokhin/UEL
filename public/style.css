@@ -759,6 +759,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .banner__pagination-title{position:absolute;bottom:-24px;color:#212529;font-size:14px;font-weight:700;line-height:24px}
 .sertificates .primary__left-title,.sertificates h1{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;padding-bottom:30px;border-bottom:1px solid #9e0a0e}
 .sertificates__desc p{color:#212529;font-size:18px;letter-spacing:.27px;line-height:32.36px;margin:45px 0}
+.posts__list{margin-bottom:60px}
 .posts__item{margin-bottom:40px}
 .posts__item:last-child{margin-bottom:0}
 .posts__link{border:1px solid #e6e7e8}
@@ -985,6 +986,7 @@ section{padding:50px 0!important}
 .pagination__item{margin-right:10px}
 .pagination__link{padding:6px}
 .sertificates__desc p{font-size:16px;line-height:22px;margin:24px 0}
+.posts__list{margin-bottom:30px}
 .posts__title{font-size:18px;line-height:22px}
 }
 @media screen and (max-width:700px){

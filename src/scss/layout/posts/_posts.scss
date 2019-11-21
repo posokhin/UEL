@@ -1,4 +1,10 @@
 .posts{
+    &__list{
+        margin-bottom: 60px;
+        @include media(768){
+            margin-bottom: 30px;
+        }
+    }
     &__item{
         margin-bottom: 40px;
         @include last();
