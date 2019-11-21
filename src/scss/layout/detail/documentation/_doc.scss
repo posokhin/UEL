@@ -1,0 +1,36 @@
+.documentation{
+    &__title{
+        color: $base;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    &__list{
+        max-width: 460px;
+        list-style: none;
+    }
+    &__item{
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &-right{
+            margin-left: 34px;
+            width: 80%;
+            color: $base;
+            font-weight: 500;
+            letter-spacing: 0.18px;
+            line-height: 20px;
+            @include media(500){
+                margin-left: 16px;
+            }
+            span{
+                display: block;
+                color: #808284;
+                font-weight: 400;
+                margin-top: 4px;
+            }
+        }
+    }
+}

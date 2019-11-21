@@ -1,0 +1,17 @@
+.detail{
+    &-slider{
+        &__current{
+            @include media(1400){
+                order: -1;
+                margin-bottom: 40px;
+            }
+        }
+        &__item{
+            @include media(1400){
+                text-align: center;
+            }
+        }
+    }
+}
+@import './current';
+@import './preview';

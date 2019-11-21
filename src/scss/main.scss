@@ -1,0 +1,57 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
+@import '../../node_modules/swiper/css/swiper.min';
+
+
+@import './help/_flex';
+@import './help/_mixins';
+@import './help/var';
+@import './help/animations';
+
+@import './layout/_base';
+
+
+@import './fonts/fonts';
+@import './fonts/ico';
+
+@import './elements/btn';
+@import './elements/icons';
+@import './elements/background-line';
+@import './elements/back-title';
+
+@import './layout/header/header';
+@import './layout/header/search';
+@import './layout/header/submenu';
+
+@import './layout/primary';
+
+@import './layout/selection/selection';
+@import './layout/selection/calc';
+
+@import './layout/_reviews';
+
+@import './layout/description/description';
+
+@import './layout/footer/footer';
+
+@import './layout/b-back/b-back';
+
+@import './layout/detail/_detail';
+
+@import './layout/other-products/other';
+
+@import './layout/catalog/catalog';
+
+@import './layout/form/form';
+@import './layout/form/send';
+
+@import './layout/price/price';
+
+@import './layout/service/service';
+
+@import './layout/sidebar/sidebar';
+
+@import './layout/about/about';
+
+
+@import './layout/pagination/pagination';

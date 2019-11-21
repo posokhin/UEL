@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            section.price
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .back-title pioneer
+                .container.container-small
+                    .price__row.flex-wrap
+                        .price__col
+                            h1 Прайс-лист
+                            .price__col-txt
+                                p В этом прайс листе представлен список цен, рекомендованных дилерам для распространения в розничной сети.
+                                p Чтобы бы получить его, введите ваш email.
+                            .price__info.flex
+                                i.i-info
+                                .price__info-right
+                                    p В случае возникновения дополнительных впоросов Вы можете обращаться по единому номеру:
+                                    a(href="tel:8-800-200-02-40") 8-800-200-02-40
+                        .price__col.price__col--form
+                            form(action="").form
+                                .form__field
+                                    input(type="text" required) 
+                                    .form__placeholder Представьтесь 
+                                        span *
+                                    .form__mark-ok
+                                        i.i-form-ok
+                                .form__field
+                                    input(type="text" required) 
+                                    .form__placeholder Компания 
+                                        span *
+                                    .form__mark-ok
+                                        i.i-form-ok
+                                .form__field
+                                    input(type="text" required) 
+                                    .form__placeholder Ваш email 
+                                        span *
+                                    .form__mark-ok
+                                        i.i-form-ok
+                                .form__field.form__privacy
+                                    label(for="privacy").form__privacy-label.flex.aic
+                                        input(type="checkbox" id="privacy")
+                                        span.form__privacy-checkbox
+                                            i.i-check
+                                        p Согласие с политикой обработки данных.
+                                button(type="submit").btn.btn-border.js-send-form отправить
+                            .form-send
+                                .form-send__icon
+                                    i.i-send
+                                .form-send__title Спасибо!
+                                p Совсем скоро прайс с лучшими пердложениями окажется в указанном почтовом ящике.
+                                a(href="").btn.btn-border отправить еще
+                                a(href="").form-send__back вернуться на главную
+
+                            
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    

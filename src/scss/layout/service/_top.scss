@@ -1,0 +1,23 @@
+.service{
+    &__content{
+        &-top{
+            margin-bottom: 80px;
+            @include media(850){
+                margin-bottom: 24px;
+            }
+            &-left{
+                span{
+                    color: #9e0a0e;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;       
+                }
+                h1{
+                    @include media(768){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

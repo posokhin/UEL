@@ -1,0 +1,84 @@
+.service{
+    &-map-list{
+        position: relative;
+        &__map{
+            height: 800px;
+            iframe{
+                height: 100%;
+            }
+            @include media(768){
+                height: 400px;
+            }
+            @include media(500){
+                height: 250px;
+            }
+        }
+        &__info{
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 360px;
+            width: 100%;
+            padding: 60px;
+            box-shadow: 0 20px 16px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            @include media(768){
+                position: static;
+                transform: none;
+                margin-top: 24px;
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            .close{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                }
+                @include media(768){
+                    display: none;
+                }
+            }
+            &-title{
+                color: #9e0a0e;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 16px;    
+                @include media(500){
+                    font-size: 16px;
+                }  
+            }
+            &-contacts{
+                color: $base;
+                font-size: 14px;
+                letter-spacing: 0.23px;
+                &-item{
+                    margin-bottom: 16px;
+                    width: 100%;
+                    @include media(768){
+                        width: 50%;
+                    }
+                    @include media(500){
+                        width: 100%;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    span{
+                        display: block;
+                        font-weight: 700;
+                        margin-bottom: 4px;
+                    }
+                    a{
+                        color: #9e0a0e;
+                        text-decoration: underline;        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.form{
+    &.hide{
+        display: none;
+    }
+    &__field{
+        position: relative;
+        margin-bottom: 40px;
+        input{
+            border: 0;
+            background: transparent;
+            border-bottom: 1px solid $base;
+            padding-bottom: 10px;
+            width: 100%;
+            color: $base;
+            font-size: 16px;
+            letter-spacing: 0.27px;
+            caret-color: #9e0a0e;
+            &:focus, &:not(:focus):valid{
+                border-bottom: 1px solid #9e0a0e;  
+                ~.form__placeholder{
+                    bottom: 40px;
+                }
+                ~.form__mark-ok{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__placeholder{
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        pointer-events: none;
+        color: $base;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.23px;
+        transition: .3s;
+        span{
+            color: #9e0a0e;
+        }
+    }
+    &__mark-ok{
+        opacity: 0;
+        transition: .3s;
+        position: absolute;
+        right: 0;
+        bottom: 16px;
+    }
+    &__privacy{
+        &-checkbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            height: 20px;
+            border: 1px solid #9e0a0e;
+            background-color: #ffffff;    
+            margin-right: 8px; 
+            i{
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+        &-label{
+            cursor: pointer;
+            input{
+                display: none;
+                &:checked{
+                    ~.form__privacy-checkbox i{
+                        opacity: 1;
+                    }
+                }
+            }
+            @include media(768){
+                font-size: 14px;
+            }
+        }
+    }
+    button{
+        max-width: 100%;
+    }
+}

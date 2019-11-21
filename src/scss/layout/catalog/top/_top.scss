@@ -1,0 +1,42 @@
+.catalog{
+    position: relative;
+    overflow: hidden;
+    &-top{
+        margin-bottom: 100px;
+        @include media(768){
+            margin-bottom: 50px;
+        }
+        h1{
+            max-width: 600px;
+            width: 50%;
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 360px;
+                height: 360px;
+                background-color: #f77d80;
+                opacity: 0.1;
+                position: absolute;
+                left: -170px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            @include media(768){
+                width: 100%;
+                &::before{
+                    width: 100px;
+                    height: 100px;
+                    left: 0;
+                }
+            }
+        }
+        &__img{
+            width: 50%;
+            @include media(768){
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+}

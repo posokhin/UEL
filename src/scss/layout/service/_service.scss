@@ -1,0 +1,176 @@
+.service{
+    position: relative;
+    overflow: hidden;
+    padding: 230px 120px;
+    @include media(1270){
+        padding: 100px 0;
+    }
+    &__content{
+        position: relative;
+        box-shadow: 0 2px 16px #d1d3d4;
+        background-color: #ffffff;
+        padding: 80px 120px;
+        @include media(1170){
+            padding: 50px;
+        }
+        @include media(768){
+            padding: 30px;
+        }
+        h1{
+            color: $base;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;   
+            @include media(768){
+                font-size: 30px;
+                line-height: normal;
+            }
+        }
+        .b-back{
+            @include media(768){
+                padding-bottom: 36px;
+            }
+        }
+    }
+    &__desc{
+        margin: 36px -20px 64px;
+        @include media(1270){
+            margin: 36px 0 64px;
+        } 
+        @include media(768){
+            margin: 24px 0;
+        }
+        &-col{
+            width: 45%;
+            padding: 0 20px;
+            @include media(1270){
+                width: 100%;
+                padding: 0;
+            }
+        }
+        &-txt{
+            @include media(1270){
+                margin-bottom: 24px;
+                p{
+                    max-width: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+            p{
+                max-width: 400px;
+                color: $base;
+                font-size: 14px;
+                letter-spacing: 0.23px;
+                line-height: 24px;
+                margin-bottom: 36px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    color: #9e0a0e;
+                    text-decoration: underline;       
+                }
+            }
+        }
+        &-info{
+            width: 55%;
+            &-wrapper{
+                background-color: rgba(235, 235, 235, .4);  
+                padding: 60px;  
+                @include media(1400){
+                    padding: 30px;
+                }
+                @include media(500){
+                    flex-direction: column;
+                }
+                i{
+                    min-width: 48px;
+                    height: 48px;
+                }
+            }
+            &-right{
+                margin-left: 40px;
+                @include media(1270){
+                    margin-left: 20px;
+                    p{
+                        margin-bottom: 5px;
+                    }
+                }
+                @include media(500){
+                    margin-left: 0;
+                    margin-top: 16px;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    color: $base;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 24px;       
+                }
+                a{
+                    color: #9e0a0e;
+                    font-size: 26px;
+                    font-weight: 500;     
+                }
+            }
+        }
+    }
+    &-city{
+        &__country{
+            margin-bottom: 78px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include media(768){
+                margin-bottom: 36px;
+            }
+        }
+        &__title{
+            color: #9e0a0e;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            padding-bottom: 36px;
+            margin-bottom: 52px;
+            border-bottom: 1px solid  #9e0a0e;
+            @include media(768){
+                margin-bottom: 24px;
+                padding-bottom: 24px;
+            }
+        }
+        &__item{
+            width: 25%;
+            @include media(1000){
+                width: 50%;
+            }
+            @include media(550){
+                width: 100%;
+            }
+        }
+        &__link{
+            color: $base;
+            font-weight: 700;
+            padding: 16px 0;
+            @include media(550){
+                padding: 8px 0;
+            }
+            i{
+                opacity: 0;
+                transition: .3s;
+                margin-left: 21px;
+            }
+            &:hover{
+                i{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+@import './top';
+@import './tabs';
+@import './list';
+@import './map-list';

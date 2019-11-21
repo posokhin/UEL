@@ -1,0 +1,39 @@
+.about{
+    &-reviews{
+        &__row{
+            @include media(1600){
+                margin: 0 -5px;
+            }
+            @include media(450){
+                margin: 0;
+            }
+        }
+        &__item{
+            width: 33.33%;
+            margin-bottom: 40px;
+            @include media(1600){
+                padding: 0 5px;
+            }
+            @include media(650){
+                width: 50%;
+            }
+            @include media(450){
+                width: 100%;
+                padding: 0;
+            }
+        }
+        &__link{
+            color: $base;
+        }
+        &__name{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            margin: 16px 0 8px;
+        }
+        &__desc{
+            font-size: 13px;
+            letter-spacing: 0.14px;
+        }
+    }
+}

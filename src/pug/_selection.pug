@@ -1,0 +1,94 @@
+section.selection
+    .background-line
+        .background-line__item.background-line__item-1
+        .background-line__item.background-line__item-2
+        .background-line__item.background-line__item-3
+        .background-line__item.background-line__item-4
+        .background-line__item.background-line__item-5
+        .background-line__item.background-line__item-6
+        .background-line__item.background-line__item-7
+    .container.container-small
+        .selection__row.flex-wrap.aic
+            .selection__calc
+                form(action="" method="").selection__calc-form
+                    .selection__calc-rooms-wrapper
+                        .selection__calc-rooms-title Количество комнат, предназначенных для охлаждения
+                        ul.selection__calc-rooms.flex-wrap
+                            li.selection__calc-rooms-item
+                                label(for="1")
+                                    input(type="radio" name="1" id="1")
+                                    span 1
+                            li.selection__calc-rooms-item
+                                label(for="2")
+                                    input(type="radio" name="1" id="2")
+                                    span 2
+                            li.selection__calc-rooms-item
+                                label(for="3")
+                                    input(type="radio" name="1" id="3")
+                                    span 3
+                            li.selection__calc-rooms-item
+                                label(for="4")
+                                    input(type="radio" name="1" id="4")
+                                    span 4
+                            li.selection__calc-rooms-item
+                                label(for="5")
+                                    input(type="radio" name="1" id="5")
+                                    span 5
+                    ul.selection__calc-range.flex-wrap.jcsb
+                        li.selection__calc-range-item
+                            .selection__calc-range-item-title Площадь помещения, м²
+                            .selection__calc-range-item-input
+                                input(type="text" value="0")
+                                .selection__calc-range-item-input-slider
+                                    input(type="text" value="0").range
+                        li.selection__calc-range-item
+                            .selection__calc-range-item-title Высота потолка, м
+                            .selection__calc-range-item-input
+                                input(type="text" value="0")
+                                .selection__calc-range-item-input-slider
+                                    input(type="text" value="0").range
+                    ul.selection__calc-checkbox.flex-wrap.jcsb
+                        li.selection__calc-checkbox-item
+                            .selection__calc-checkbox-item-title Степень освещенности солнечными лучами (инсоляция)
+                            ul.selection__calc-checkbox-item-sublist.flex-wrap.jcsb
+                                li.selection__calc-checkbox-item-sublist-item
+                                    label(for="6")
+                                        input(type="radio" name="2" id="6")
+                                        span Слабая
+                                li.selection__calc-checkbox-item-sublist-item
+                                    label(for="7")
+                                        input(type="radio" name="2" id="7")
+                                        span Сильная
+                        li.selection__calc-checkbox-item
+                            .selection__calc-checkbox-item-title Наличие жалюзи или плотных штор
+                            ul.selection__calc-checkbox-item-sublist.flex-wrap.jcsb
+                                li.selection__calc-checkbox-item-sublist-item
+                                    label(for="8")
+                                        input(type="radio" name="3" id="8")
+                                        span Да
+                                li.selection__calc-checkbox-item-sublist-item
+                                    label(for="9")
+                                        input(type="radio" name="3" id="9")
+                                        span Нет
+                    ul.selection__calc-range.flex-wrap.jcsb
+                        li.selection__calc-range-item
+                            .selection__calc-range-item-title Количество компьютеров и/или телевизоров в помещении
+                            .selection__calc-range-item-input
+                                input(type="text" value="0")
+                                .selection__calc-range-item-input-slider
+                                    input(type="text" value="0").range
+                        li.selection__calc-range-item
+                            .selection__calc-range-item-title Количество людей, постоянно находящихся в помещении
+                            .selection__calc-range-item-input
+                                input(type="text" value="0")
+                                .selection__calc-range-item-input-slider
+                                    input(type="text" value="0").range
+                .selection__calc-total.flex-wrap.aic.jcsb
+                    p Вам необходима сплит-система производительностью 
+                    strong 5.01 кВт
+            .selection__right
+                h2 Подбор кондиционера
+                p Правильный выбор кондиционера поможет вам сэкономить средства и обеспечить комфорт. Предлагаем воспользоваться простым калькулятором для быстрого подбора кондиционера онлайн.
+                a(href="").flex.aic
+                    span Найти дилера
+                    .i-arrow

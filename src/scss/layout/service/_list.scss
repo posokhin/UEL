@@ -1,0 +1,56 @@
+.service{
+    &__map{
+        display: none;
+        margin-top: 24px;
+        @include media(500){
+            iframe{
+                height: 200px;
+            }
+        }
+    }
+    &__item{
+        padding: 24px 0;
+        border-top: 1px solid  #e6e7e8;
+    }
+    &__title{
+        color: #9e0a0e;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;    
+    }
+    &__row{
+        margin: 0 -20px;
+        @include media(500){
+            margin: 0;
+        }
+    }
+    &__col{
+        width: 25%;
+        padding: 0 20px;
+        color: $base;
+        font-size: 14px;
+        letter-spacing: 0.23px;
+        @include media(900){
+            width: 50%;
+            margin-bottom: 16px;
+        }
+        @include media(500){
+            width: 100%;
+            padding: 0;
+        }
+        &-title{
+            font-weight: 700;
+            margin-bottom: 4px;      
+        }
+        p{
+            margin-bottom: 9px;
+        }
+        .js-open-map{
+            text-decoration: none;
+        }
+        a{
+            color: #9e0a0e;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.i{
+    transition: .3s;
+    &-arrow{
+        background: url("img/icon/arrow-right.svg") no-repeat center/ cover;
+        min-width: 16px;
+        height: 16px;
+        &-left{
+            transform: rotate(180deg);
+        }
+        &--back{
+            display: block;
+            background: url("img/icon/arrow-back.svg") no-repeat center/ cover;
+            width: 36px;
+            height: 30px;   
+            transform: rotate(180deg);
+        }
+        &--black-small{
+            display: block;
+            background: url("img/icon/arrow-back--small.svg") no-repeat center/ contain;
+            width: 16px;
+            height: 14px;   
+        }
+        &--top{
+            display: block;
+            background: url("img/icon/arrow-back.svg") no-repeat center/ cover;
+            width: 36px;
+            height: 30px;   
+            transform: rotate(-90deg);   
+        }
+        &--bottom{
+            display: block;
+            background: url("img/icon/arrow-back.svg") no-repeat center/ cover;
+            width: 36px;
+            height: 30px;   
+            transform: rotate(90deg);   
+        }
+        &--red{
+            display: block;
+            background: url("img/icon/arrow-red.svg") no-repeat center/ contain;
+            width: 21px;
+            height: 12px;
+        }
+    }
+    &-play {
+        background: url("img/icon/play.svg") no-repeat center/cover;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    &-close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        transition: .3s;
+        &:hover{
+            opacity: 0.7;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: white;
+            transform: rotate(45deg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: white;
+            transform: rotate(-45deg);
+        }
+        &--black{
+            &::before, &::after{
+                background: #191412;
+            }
+        }
+    }
+    &-pdf{
+        display: block;
+        background: url("img/icon/pdf.svg") no-repeat center/cover;
+        min-width: 51px;
+        max-width: 51px;
+        height: 59px;   
+    }
+    &-info{
+        display: block;
+        background: url("img/icon/info.svg") no-repeat center/cover;
+        min-width: 24px;
+        max-width: 24px;
+        height: 24px;      
+    }
+    &-check{
+        display: block;
+        background: url("img/icon/check.svg") no-repeat center/cover;
+        min-width: 9px;
+        max-width: 9px;
+        height: 7px;    
+    }
+    &-send{
+        display: block;
+        background: url("img/icon/send.svg") no-repeat center/cover;
+        min-width: 64px;
+        max-width: 64px;
+        height: 54px;    
+    }
+    &-form-ok{
+        display: block;
+        background: url("img/icon/form-ok.svg") no-repeat center/cover;
+        min-width: 16px;
+        max-width: 16px;
+        height: 13px;   
+    }
+}

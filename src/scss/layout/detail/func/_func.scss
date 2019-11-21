@@ -1,0 +1,38 @@
+.func{
+    &__list{
+        margin: 0 -20px;
+        @include media(768){
+            margin: 0;
+        }
+    }
+    &__item{
+        width: 50%;
+        padding: 0 20px;
+        margin-bottom: 16px;
+        @include media(768){
+            width: 100%;
+            padding: 0;
+        }
+        p{
+            color: $base;
+            font-size: 14px;
+            letter-spacing: 0.18px;
+            line-height: 22px; 
+            padding-left: 64px;   
+            @include media(768){
+                padding: 0;
+                margin-top: 8px;
+            }    
+        }
+    }
+    &__icon{
+        min-width: 48px;
+    }
+    &__title{
+        color: $base;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;  
+        margin-left: 16px;     
+    }
+}

@@ -1,0 +1,166 @@
+.detail{
+    overflow-x: hidden;
+    position: relative;
+    &__container{
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 0 40px;
+        position: relative;
+        @include media(768){
+            padding: 0 24px;
+        }
+    }
+    &-product{
+        margin-bottom: 140px;
+        @include media(950){
+            margin-bottom: 50px;
+        }
+        &__container{
+            max-width: 1420px;
+            margin: 0 auto;
+            padding: 0 40px;
+            @include media(768){
+                padding: 0 24px;
+            }
+        }
+        &__row{
+            @include media(1400){
+                margin: 0 -20px;
+            }
+        }
+        &__col{
+            width: 40%;
+            &--slider{
+                width: 60%;
+                @include media(1400){
+                    margin-bottom: 40px;
+                    width: 50%;
+                }
+            }
+            @include media(1400){
+                width: 50%;
+                padding: 0 20px;
+            }
+            @include media(950){
+                width: 100%;
+            }
+        }
+        &__title{
+            color: #9e0a0e;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;       
+            margin-bottom: 4px;
+        }
+        &__series{
+            color: #212529;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;      
+            margin-bottom: 32px; 
+        }
+        &__text{
+            p{
+                color: #212529;
+                letter-spacing: 0.18px;
+                line-height: 24px;      
+                margin-bottom: 16px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        a{
+            margin-top: 34px;
+        }
+    }
+    &__list{
+        &-title{
+            color: $base;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;    
+            margin-bottom: 40px;  
+            @include media(768){
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__item{
+        margin-bottom: 24px;
+        &-count{
+            margin-right: 60px;
+            color: #f77d80;
+            font-weight: 500;
+            line-height: 30px;
+            @include media(768){
+                margin-right: 16px;
+            }
+        }
+        p{
+            color: $base;
+            letter-spacing: 0.2px;
+            line-height: 30px;      
+        }
+    }
+    &__desc{
+        p{
+            color: $base;
+            font-size: 20px;
+            letter-spacing: 0.3px;
+            line-height: 32px;
+            margin-bottom: 32px;
+            @include media(768){
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 16px;
+            }
+        }
+        strong{
+            color: $base;
+            font-weight: 500;
+            margin-bottom: 32px;
+            display: block;
+            font-size: 20px;
+            letter-spacing: 0.3px;
+            line-height: 32px;
+            @include media(768){
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 16px;
+            }
+        }
+        h2{
+            color: #9e0a0e;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            margin-bottom: 24px;   
+            @include media(768){
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 16px;
+            }    
+        }
+        &-list{
+            margin-bottom: 28px;
+            list-style: disc;
+            list-style-position: inside;
+            li{
+                color: $base;
+                font-size: 20px;
+                letter-spacing: 0.3px;
+                line-height: 32px;
+                @include media(768){
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+@import './slider/_slider';
+@import './tabs/_tabs';
+@import './func/_func';
+@import './spec/_spec';
+@import './documentation/_doc.scss';

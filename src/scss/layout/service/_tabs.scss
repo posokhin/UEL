@@ -1,0 +1,46 @@
+.service{
+    &-tabs{
+        @include media(850){
+            width: 100%;
+            margin-top: 24px;
+        }
+        &__item{
+            border: 1px solid #9e0a0e;
+            transition: .3s;
+            @include media(768){
+                width: 50%;
+                text-align: center;
+            }
+            &:first-child{
+                border-right: 0;
+            }
+            &.active, &:hover{
+                background-color: #9e0a0e;     
+                .service-tabs__link{
+                    color: white;
+                }
+            }
+        }
+        &__link{
+            display: block;
+            padding: 14px 44px;
+            color: #9e0a0e;
+            font-weight: 700;
+            letter-spacing: 0.24px;
+            @include media(768){
+                padding: 16px;
+            }
+            @include media(500){
+                padding: 8px;
+            }
+        }
+        &__content{
+            &-item{
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
+        }
+    }
+}

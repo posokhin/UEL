@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            .banner
+                .banner__images.swiper-container
+                    ul.banner__list.swiper-wrapper
+                        li.banner__item.swiper-slide
+                            a(href="")
+                                img(src="img/banner.png", alt="")
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    

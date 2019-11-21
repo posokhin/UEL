@@ -1,0 +1,17 @@
+@mixin col($size) {
+    width: 100%/12 * $size;
+}
+@mixin z1 {
+    position: relative;
+    z-index: 1;
+}
+@mixin media($size) {
+    @media screen and (max-width: $size+'px') {
+        @content;
+    }
+}
+@mixin last() {
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

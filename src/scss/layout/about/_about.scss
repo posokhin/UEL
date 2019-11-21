@@ -1,0 +1,44 @@
+.about{
+    position: relative;
+    overflow: hidden;
+    padding: 230px 120px;
+    @include media(1400){
+        padding: 120px 60px;
+    }
+    @include media(1100){
+        padding: 50px 30px;
+    }
+    &-desc{
+        margin-bottom: 80px;
+        @include media(1050){
+            margin-bottom: 32px;
+            &__img{
+                margin-bottom: 16px;
+                img{
+                    width: 64px;
+                }
+            }
+            &__img, &__text{
+                width: 100%;
+            }
+        }
+        &__img{
+            width: 20%;
+        }
+        &__text{
+            width: 80%;
+            margin-left: auto;
+            color: $base;
+            font-size: 20px;
+            letter-spacing: 0.3px;
+            line-height: 32px;
+            @include media(768){
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+@import './content';
+@import './_timeline';
+@import './reviews';

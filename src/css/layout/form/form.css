@@ -1,0 +1,3 @@
+.form__field{position:relative}
+.form__field input{border:0;background:0 0}
+.form__placeholder{position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);pointer-events:none}

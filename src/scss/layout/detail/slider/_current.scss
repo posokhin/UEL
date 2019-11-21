@@ -1,0 +1,10 @@
+.detail{
+    &-slider{
+        &__current{
+            width: 60%;
+            @include media(1400){
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.catalog{
+    &-cat{
+        &__item{
+            width: 20%;
+            @include media(1150){
+                width: 33.33%;
+            }
+            @include media(768){
+                width: 50%;
+            }
+            @include media(500){
+                width: 100%;
+            }
+        }
+        &__link{
+            display: block;
+            padding: 40px;
+            background-color: #ffffff;
+            transition: .3s;
+            &:hover{
+                box-shadow: 0 2px 16px #d1d3d4;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        &__title{
+            color: $base;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;      
+            @include media(1150){
+                height: 50px;
+            }
+        }
+        &__icon{
+            width: 64px;
+            height: 64px;
+            margin-bottom: 24px;
+        }
+    }
+}

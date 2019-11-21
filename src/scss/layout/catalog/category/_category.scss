@@ -1,0 +1,82 @@
+.catalog{
+    &-category{
+        padding-bottom: 100px;
+        background-color: #ffffff;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        .background-line{
+            z-index: 0;
+            width: 1736px;
+        }
+        .b-back{
+            position: relative;
+            z-index: 1;
+        }
+        .back-title{
+            z-index: 0;
+        }
+        &__top{
+            h1{
+                position: relative;
+            }
+        }
+        &__list{
+            margin: 68px 0 80px;
+            @include media(768){
+                margin: 32px 0;
+            }
+        }
+        &__item{
+            width: 50%;
+            border: 1px solid #f3f3f3;
+            border-bottom: 0;
+            position: relative;
+            transition: .3s;
+            @include media(768){
+                width: 100%;
+                &:nth-child(odd){
+                    border-right: 1px solid #f3f3f3;
+                }
+            }
+            &--full{
+                width: 100%;
+            }
+            &:hover{
+                box-shadow: 0 2px 16px #d1d3d4;
+                z-index: 1;
+            }
+            &:nth-child(odd){
+                border-right: 0;
+            }
+            &:last-child{
+                border-bottom: 1px solid #f3f3f3;
+                border-right: 1px solid #f3f3f3;
+            }
+        }
+        &__link{
+            display: block;
+            background-color: #ffffff;
+            padding: 40px;
+            height: 100%;
+            @include media(500){
+                padding: 20px;
+            }
+            span{
+                color: #808284;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+        &__img{
+            text-align: center;
+            margin: 36px 0 28px;
+        }
+        &__title{
+            color: $base;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+}

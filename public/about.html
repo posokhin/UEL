@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>UEL</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--shadow">
+        <div class="container">
+          <div class="header__row flex-wrap aic">
+            <div class="header__col header__col_logo"><a class="header__logo" href=""><img src="img/logo.svg" alt=""/></a></div>
+            <div class="header__col header__col_list">
+              <ul class="header__list flex aic">
+                <li class="header__item"><a class="header__link flex aic" href="/about.html"><span>О бренде</span><i class="i-arrow-down"></i></a></li>
+                <li class="header__item js-open-catalog-menu"><a class="header__link flex aic" href="/catalog.html"><span>Каталог</span><i class="i-arrow-down"></i></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/price.html"><span>Прайс-лист для дилеров</span></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/service.html"><span>Сервис</span></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/contacts.html"><span>Контакты</span></a></li>
+              </ul>
+            </div>
+            <div class="header__col header__col_search flex jce">
+              <div class="header__search">
+                <div class="header__search-btn"><i class="i-search"></i></div>
+                <div class="header__search-wrapper">
+                  <div class="container">
+                    <div class="header__search-row flex aic"><i class="i-search"></i>
+                      <form action="">
+                        <input type="text" placeholder="Ваш поисковый запрос"/>
+                      </form>
+                      <div class="header__search-close"><i class="i-close"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-submenu__wrapper">
+          <div class="header-submenu__arrow"></div>
+          <div class="header-submenu__container">
+            <div class="header-submenu__row flex-wrap">
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Бытовые кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Artis</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Fortis</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Fortis ECO</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Бытовые кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Варианты подключения</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Полупромышленные кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Универсальные наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Напольно - подпотолочные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Высоконапорные канальные модели</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Фэн-койлы</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWDL – канальный, низконапорный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWDH – канальный, высоконапорный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWCF – кассетный, 4-поточный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWWM-C – настенный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWUD и KWUС – универсальный</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Мультизональные системы VRF</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Настенные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Напольно - подпотолочные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Система управления кондиционером</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Программа подбора</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Оборудование для телекоммуникаций</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Теплообменные установки (Серия KHX)</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Естественное охлаждение (Серия KCB)</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item header-submenu__item--bordered"><a class="header-submenu__link" href="">Оборудование для увлажнения</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Паровые увлажнители серия SMART</a></li>
+                    <li class="header-submenu-nested__item header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Паровые увлажнители серия CLASSIC</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <div class="background-line">
+          <div class="background-line__item background-line__item-1"></div>
+          <div class="background-line__item background-line__item-2"></div>
+          <div class="background-line__item background-line__item-3"></div>
+          <div class="background-line__item background-line__item-4"></div>
+          <div class="background-line__item background-line__item-5"></div>
+          <div class="background-line__item background-line__item-6"></div>
+          <div class="background-line__item background-line__item-7"></div>
+        </div>
+        <div class="back-title back-title--animate">pioneer</div>
+        <div class="container">
+          <div class="about__row flex-wrap">
+            <div class="about__col about__col--sidebar">
+              <aside class="sidebar">
+                <ul class="sidebar__list">
+                  <li class="sidebar__item active"><a class="sidebar__link" href="">О бренде</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="">Статьи</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="">Отзывы</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="">Референс-лист</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="">Сертификаты</a></li>
+                </ul>
+              </aside>
+            </div>
+            <div class="about__col about__col--content">
+              <div class="about__content">
+                <div class="detail-tabs__wrapper about__tabs">
+                  <ul class="detail-tabs__list flex">
+                    <li class="detail-tabs__item detail-tabs__item--active active"><a class="detail-tabs__link" href="">О бренде</a></li>
+                    <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Статьи</a></li>
+                    <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Отзывы</a></li>
+                    <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Референс-лист </a></li>
+                    <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Сертификаты</a></li>
+                  </ul>
+                </div>
+                <div class="about-desc flex-wrap aic">
+                  <div class="about-desc__img"><img src="img/about/about-top-img.svg" alt=""/></div>
+                  <div class="about-desc__text">
+                    <p>Инверторные кондиционеры Pioneer — это умные сплит-системы с лаконичным европейским дизайном, оснащенные мощными компрессорами для создания идеального микроклимата.</p>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <h1>История развития компании</h1>
+                  <div class="line">
+                    <div class="line__top flex aic jcc"><img src="img/about/line-top.svg" alt=""/></div>
+                    <div class="line__bottom"></div>
+                  </div>
+                  <ul class="timeline__list flex-wrap">
+                    <li class="timeline__item">
+                      <div class="timeline__year">19<span>93</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление компании «Петроспек» на зарождающемся климатическом рынке России (на настоящий момент компания называется United Elements Group).</p>
+                      </div>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">19<span>97</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление торговой  марки Pioneer.</p>
+                      </div>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>05</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление первой линейки бытовых настенных сплит-систем и оконных моноблочных кондиционеров:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/2.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KFR25GW</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>06</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Поступление в продажу on/of f серии:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>07</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Выпуск серий, на фреоне R22:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>08</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появились инверторные сплит-системы Pioneer на хладагенте R410A:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>09</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появились полупромышленные модели кондиционеров Pioneer.</p>
+                      </div>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>10</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление on/off серии Smart:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>11</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Новая on/off линейка Breeze на хладагенте R410A:</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KC20G</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>12</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Ребрендинг Pioneer:</p><img src="img/about/1.png" alt=""/>
+                      </div>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>13</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление в ассортименте высоконапорных канальных кондиционеров, производящихся в Малайзии, мультисплит систем и мультизональных систем Pioneer.</p>
+                        <p>Выпуск новых бытовых линеек:</p>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Ozon </span>on/off модель со встроенным ионизатором</p>
+                              <div class="timeline-sublist__title">KC20G</div>
+                            </div></a></li>
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Calipso </span>on/off с разнообразными пользовательскими режимами для большего комфорта </p>
+                              <div class="timeline-sublist__title">KFR20CW</div>
+                            </div></a></li>
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/2.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Calipso DC Inverter </span>инверторные модели нового поколения, оснащенные мощными компрессорами и отличающиеся низким уровнем шума  </p>
+                              <div class="timeline-sublist__title">KFRI25GN</div>
+                            </div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>14</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появление на рынке фэн-койлов и телекомуникационных установок Pioneer.</p>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Ionic </span>on/off кондиционеры со встроенным ионизатором</p>
+                              <div class="timeline-sublist__title">KFR20IW</div>
+                            </div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>15</span>
+                        <div class="mark"></div>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Albion </span>инверторные  модели современного дизайна, со встроенным ионизатором</p>
+                              <div class="timeline-sublist__title">KFRI25IW</div>
+                            </div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>16</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Новый продукт в портфеле – паровые увлажнители Pioneer.</p>
+                        <p>Появление в ассортименте Pioneer линейки <span>Pacific</span>— on/off модели с ультранизким уровнем шума внутреннего блока.</p>
+                      </div>
+                      <ul class="timeline-sublist flex-wrap">
+                        <li class="timeline-sublist__item"><a class="timeline-sublist__link" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__title">KFRI25IW</div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>17</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Ребрендинг ТМ Pioneer</p><img src="img/about/2.png" alt=""/>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Появились серии:</p>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Vektor </span>on/off сплит-системы с множеством полезных пользовательских функций</p>
+                              <div class="timeline-sublist__title">KFRI25IW</div>
+                            </div></a></li>
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Axioma </span>инверторная линейка, получившая сертификат на использование в медицинских и детских учреждениях </p>
+                              <div class="timeline-sublist__title">KFRI25IW</div>
+                            </div></a></li>
+                      </ul>
+                      <div class="timeline__text"> 
+                        <p>На рынок вышло новое  поколение  мультизональных систем Pioneer.</p>
+                      </div>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>18</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Новые линейки на рынке:</p>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Vektor </span>on/off сплит-системы с множеством полезных пользовательских функций</p>
+                              <div class="timeline-sublist__title">KFRI25IW</div>
+                            </div></a></li>
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Axioma </span>инверторная линейка, получившая сертификат на использование в медицинских и детских учреждениях </p>
+                              <div class="timeline-sublist__title">KFRI25IW</div>
+                            </div></a></li>
+                      </ul>
+                    </li>
+                    <li class="timeline__item">
+                      <div class="timeline__year">20<span>19</span>
+                        <div class="mark"></div>
+                      </div>
+                      <div class="timeline__text"> 
+                        <p>Новая линейка<span>Fortis Eco </span>– продолжение популярной модели Fortis в новом дизайне и с дополнительными сменными фильтрами в комплекте</p>
+                      </div>
+                      <ul class="timeline-sublist timeline-sublist--column">
+                        <li class="timeline-sublist__item timeline-sublist__item--column"><a class="timeline-sublist__link flex" href="">
+                            <div class="timeline-sublist__img"><img src="img/pr/1.png" alt=""/></div>
+                            <div class="timeline-sublist__right">
+                              <p> <span>Vektor </span>on/off сплит-системы с множеством полезных пользовательских функций</p>
+                              <div class="timeline-sublist__title">KFRI25MW/ Eco</div>
+                            </div></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row flex-wrap">
+          <div class="footer__col footer__col_copyright"><a href=""><img src="img/icon/logo-footer.svg" alt=""/></a>
+            <p>© 2019 Pioneer.<br>Все права защищены</p>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">О бренде</a></li>
+              <li class="footer__item"><a href="">История</a></li>
+              <li class="footer__item"><a href="">Статьи</a></li>
+              <li class="footer__item"><a href="">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Каталог</a></li>
+              <li class="footer__item"><a href="">Бытовые кондиционеры</a></li>
+              <li class="footer__item"><a href="">Полупромышленные кондиционеры</a></li>
+              <li class="footer__item"><a href="">Мультизональные системы VRF</a></li>
+              <li class="footer__item"><a href="">Оборудование для телекоммуникаций</a></li>
+              <li class="footer__item"><a href="">Оборудование для увлажнения</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Клиентам</a></li>
+              <li class="footer__item"><a href="">Сервис</a></li>
+              <li class="footer__item"><a href="">Контакты</a></li>
+              <li class="footer__item"><a href="">Прайс-лист для дилеров</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Архив серий</a></li>
+              <li class="footer__item"><a href="">Бытовые кондиционеры</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <ul class="footer__list">
+              <li class="footer__item">Контактная информация</li>
+              <li class="footer__item"> <a class="flex aic" href="tel:8 (800) 200 02 40"><i class="i-phone"></i><span>8 (800) 200 02 40</span></a></li>
+              <li class="footer__item"> <a class="flex aic" href="mailto:info@pioneer-air.ru"><i class="i-mail"></i><span>info@pioneer-air.ru</span></a></li>
+            </ul>
+            <div class="footer__dev"><a class="flex-wrap aic" href="https://www.alkodesign.ru/" target="_blank"><span>Разработка сайта:</span><img src="img/alko.svg" alt=""/></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.sidebar{
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        @include last;
+        @include media(768){
+            margin-bottom: 20px;
+        }
+        &:before{
+            display: none;
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: #9e0a0e;
+            margin-right: 16px;
+        }
+        &.active{
+            &::before{
+                display: block;
+            }
+            .sidebar__link{
+                color: #9e0a0e; 
+            }
+        }
+    }
+    &__link{
+        color: $base;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        @include media(768){
+            font-size: 16px;
+            line-height: normal;
+        }      
+    }
+}

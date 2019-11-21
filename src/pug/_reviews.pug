@@ -1,0 +1,35 @@
+section.reviews
+    .background-line
+        .background-line__item.background-line__item-1
+        .background-line__item.background-line__item-2
+        .background-line__item.background-line__item-3
+        .background-line__item.background-line__item-4
+        .background-line__item.background-line__item-5
+        .background-line__item.background-line__item-6
+        .background-line__item.background-line__item-7
+    .reviews__back-txt отзывы
+    .container.container-small 
+        h2 Отзывы наших покупателей
+        .reviews__row.flex-wrap
+            .reviews__left  
+                .reviews__current
+                    .reviews__current-video
+                        video(src="video/1.mp4" poster="img/rev/curr.png")
+                        i.i-play
+                    .reviews__current-txt
+                        .reviews__current-name Олег Немоляев
+                        .reviews__current-position Генеральный директор ООО «Ноунэйм Компани»
+            .reviews__right
+                ul.reviews__right-list.flex-wrap
+                    li.reviews__right-item(data-video="video/2.mp4" data-poster="img/rev/1.png")
+                        .reviews__right-item-img
+                            img(src="img/rev/1.png", alt="")
+                        .reviews__right-item-name Олег Немоляев
+                    li.reviews__right-item(data-video="video/1.mp4" data-poster="img/rev/2.png")
+                        .reviews__right-item-img
+                            img(src="img/rev/2.png", alt="")
+                        .reviews__right-item-name Надежда К.
+                    li.reviews__right-item(data-video="video/2.mp4" data-poster="img/rev/1.png")
+                        .reviews__right-item-img
+                            img(src="img/rev/3.png", alt="")
+                        .reviews__right-item-name Кристофер Уолкер

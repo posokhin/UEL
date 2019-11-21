@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>UEL</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--shadow">
+        <div class="container">
+          <div class="header__row flex-wrap aic">
+            <div class="header__col header__col_logo"><a class="header__logo" href=""><img src="img/logo.svg" alt=""/></a></div>
+            <div class="header__col header__col_list">
+              <ul class="header__list flex aic">
+                <li class="header__item"><a class="header__link flex aic" href="/about.html"><span>О бренде</span><i class="i-arrow-down"></i></a></li>
+                <li class="header__item js-open-catalog-menu"><a class="header__link flex aic" href="/catalog.html"><span>Каталог</span><i class="i-arrow-down"></i></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/price.html"><span>Прайс-лист для дилеров</span></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/service.html"><span>Сервис</span></a></li>
+                <li class="header__item"><a class="header__link flex aic" href="/contacts.html"><span>Контакты</span></a></li>
+              </ul>
+            </div>
+            <div class="header__col header__col_search flex jce">
+              <div class="header__search">
+                <div class="header__search-btn"><i class="i-search"></i></div>
+                <div class="header__search-wrapper">
+                  <div class="container">
+                    <div class="header__search-row flex aic"><i class="i-search"></i>
+                      <form action="">
+                        <input type="text" placeholder="Ваш поисковый запрос"/>
+                      </form>
+                      <div class="header__search-close"><i class="i-close"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-submenu__wrapper">
+          <div class="header-submenu__arrow"></div>
+          <div class="header-submenu__container">
+            <div class="header-submenu__row flex-wrap">
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Бытовые кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Artis</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Fortis</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Серия Fortis ECO</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Бытовые кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Варианты подключения</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Полупромышленные кондиционеры</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Универсальные наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Напольно - подпотолочные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные модели</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Высоконапорные канальные модели</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Фэн-койлы</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWDL – канальный, низконапорный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWDH – канальный, высоконапорный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWCF – кассетный, 4-поточный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWWM-C – настенный</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">KWUD и KWUС – универсальный</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Мультизональные системы VRF</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Наружные блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Настенные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Кассетные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Напольно - подпотолочные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Канальные внутренние блоки</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Система управления кондиционером</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Программа подбора</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-submenu__list">
+                <li class="header-submenu__item"><a class="header-submenu__link" href="">Оборудование для телекоммуникаций</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Теплообменные установки (Серия KHX)</a></li>
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Естественное охлаждение (Серия KCB)</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item header-submenu__item--bordered"><a class="header-submenu__link" href="">Оборудование для увлажнения</a>
+                  <ul class="header-submenu-nested">
+                    <li class="header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Паровые увлажнители серия SMART</a></li>
+                    <li class="header-submenu-nested__item header-submenu-nested__item"><a class="header-submenu-nested__link" href="">Паровые увлажнители серия CLASSIC</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="detail">
+        <div class="background-line">
+          <div class="background-line__item background-line__item-1"></div>
+          <div class="background-line__item background-line__item-2"></div>
+          <div class="background-line__item background-line__item-3"></div>
+          <div class="background-line__item background-line__item-4"></div>
+          <div class="background-line__item background-line__item-5"></div>
+          <div class="background-line__item background-line__item-6"></div>
+          <div class="background-line__item background-line__item-7"></div>
+        </div>
+        <div class="container">
+          <div class="b-back"><a class="flex aic" href=""><i class="i-arrow--back"></i><span>Назад к списку категорий</span></a></div>
+        </div>
+        <div class="detail-product">
+          <div class="detail-product__container">
+            <div class="detail-product__row flex-wrap">
+              <div class="detail-product__col detail-product__col--slider">
+                <div class="detail-slider flex-wrap aic">
+                  <div class="detail-preview">
+                    <div class="detail-preview__arrow detail-preview__arrow--top"><i class="i-arrow--top"></i></div>
+                    <div class="detail-preview__container swiper-container js-preview-detail">    
+                      <ul class="detail-preview__list swiper-wrapper">
+                        <li class="detail-preview__item active swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                        <li class="detail-preview__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                        <li class="detail-preview__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                        <li class="detail-preview__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                      </ul>
+                    </div>
+                    <div class="detail-preview__arrow detail-preview__arrow--bottom"><i class="i-arrow--bottom"></i></div>
+                  </div>
+                  <div class="detail-slider__current swiper-container js-current-detail">
+                    <ul class="detail-slider__list swiper-wrapper">
+                      <li class="detail-slider__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                      <li class="detail-slider__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                      <li class="detail-slider__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                      <li class="detail-slider__item swiper-slide"><img src="img/pr/1.png" alt=""/></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="detail-product__col detail-product__col--text">
+                <div class="detail-product__title">Сплит система Pioneer</div>
+                <div class="detail-product__series">Серия Artis</div>
+                <div class="detail-product__text">
+                  <p>Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик.</p>
+                  <p>Тихий режим работы и ультранизкий уровень шума – до 23 дБ(А), лучшая длина трасс и перепад высот – все это удачно совмещено в новой серии.</p>
+                </div><a class="btn btn-border" href="">где купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-tabs">
+          <div class="detail__container">
+            <div class="detail-tabs__wrapper">
+              <ul class="detail-tabs__list flex js-detail-tabs">
+                <li class="detail-tabs__item detail-tabs__item--active active"><a class="detail-tabs__link" href="">Описание</a></li>
+                <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Функции</a></li>
+                <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Технические характеристики</a></li>
+                <li class="detail-tabs__item"><a class="detail-tabs__link" href="">Документация </a></li>
+              </ul>
+            </div>
+            <ul class="detail-tabs-content">
+              <li class="detail-tabs-content__item active">
+                <div class="detail-tabs__desc">
+                  <p>Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик.</p>
+                  <p>Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.  </p>
+                </div>
+                <div class="detail__list-wrapper">
+                  <div class="detail__list-title">Особенности серии:</div>
+                  <ul class="detail__list">
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">01</div>
+                      <p>Ультранизкий уровень шума внутреннего блока — 23 дБ(А)</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">02</div>
+                      <p>Энергоэффективность класса А способствует низкому расходу энергии и сокращают затраты на ее потребление.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">03</div>
+                      <p>Дизайн — современная форма и компактные размеры внутреннего блока делают модели этой серии идеальным решением для помещений любого дизайна.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">04</div>
+                      <p>Режим I feel позволяет устанавливать комфортную температуру именно в том месте, где находится пользователь.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">05</div>
+                      <p>Интеллектуальный прогрев перед началом работы исключает попадание на пользователя холодного воздуха.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">06</div>
+                      <p>Усиленная фильтрация: сочетание высокоэффективных фильтров и функции Cold Plasma позволяет уничтожать бактерии, вирусы, пыльцу, болезнетворные микроорганизмы, а также позволяет дезодорировать воздух.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">07</div>
+                      <p>Автоочистка и автопросушка внутреннего блока исключают возникновение плесени и запахов во внутреннем блоке.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">08</div>
+                      <p>Антикоррозийное покрытие теплообменников Blue fin  защищает теплообменник от негативного воздействия окружающей среды и обеспечивает долговременную бесперебойную работу наружного блока.</p>
+                    </li>
+                    <li class="detail__item flex">
+                      <div class="detail__item-count">09</div>
+                      <p>Режим турбо позволяет быстро достичь заданной температуры.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="detail-tabs-content__item">
+                <div class="detail-tabs__desc">
+                  <p>Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик. </p>
+                  <p>Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.</p>
+                </div>
+                <ul class="func__list flex-wrap">
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/1.png" alt=""/></div>
+                      <div class="func__title">I-Feel</div>
+                    </div>
+                    <p>Функция I Feel ориентирует датчик измерения температуры в помещении с внутреннего блока сплит-системы на пульт управления. С этой функцией кондиционер способен поддерживать нужную температуру именно в том месте, где находится пульт управления сплит-системой, не меняя при этом направления воздушного потока.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/2.png" alt=""/></div>
+                      <div class="func__title">Информативный дисплей пульта</div>
+                    </div>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/3.png" alt=""/></div>
+                      <div class="func__title">Компактный дизайн</div>
+                    </div>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/4.png" alt=""/></div>
+                      <div class="func__title">Автопереключение рабочих режимов</div>
+                    </div>
+                    <p>В зависимости от заданного параметра и фактической температуры в помещении контроллер автоматически переключает кондиционер на работу в режиме нагрева или охлаждения.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/5.png" alt=""/></div>
+                      <div class="func__title">Режим комфортного сна</div>
+                    </div>
+                    <p>Функция создания повышенного комфорта, обеспечивающая работу установки в соответствии с определенным ритмом изменения температуры в помещении.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/6.png" alt=""/></div>
+                      <div class="func__title">Интеллектуальная разморозка</div>
+                    </div>
+                    <p>Действует для разморозки наружного блока в случае необходимости, а не по заданному расписанию для снижения энергозатрат.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/7.png" alt=""/></div>
+                      <div class="func__title">Светодиодный дисплей</div>
+                    </div>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/8.png" alt=""/></div>
+                      <div class="func__title">Режим турбо</div>
+                    </div>
+                    <p>Предназначен для охлаждения или нагрева помещения до уровня заданной температуры в кратчайший срок.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/9.png" alt=""/></div>
+                      <div class="func__title">Автоматическое регулирование воздушного потока</div>
+                    </div>
+                    <p>Величина воздушного потока регулируется микропроцессором в соответствии с изменением температуры в помещении.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/10.png" alt=""/></div>
+                      <div class="func__title">Мультискоростной вентилятор</div>
+                    </div>
+                    <p>Позволяет менять скорость вентилятора для достижения или поддержания заданной температуры и желаемого уровня шума.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/11.png" alt=""/></div>
+                      <div class="func__title">Режим вентиляции</div>
+                    </div>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/12.png" alt=""/></div>
+                      <div class="func__title">Режим осушения</div>
+                    </div>
+                    <p>Система эффективно осушает воздух, не допускает при этом резкого понижения температуры.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/13.png" alt=""/></div>
+                      <div class="func__title">Таймер однократного ВКЛ/ВЫКЛ</div>
+                    </div>
+                    <p>Позволяет задавать одну точку ВКЛ/ВЫКЛ кондиционера.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/14.png" alt=""/></div>
+                      <div class="func__title">Автоматический перезапуск</div>
+                    </div>
+                    <p>Эта функция обеспечивает автоматический перезапуск кондиционера при подаче электропитания после временного сбоя. Управление работой осуществляется исходя из параметров, установленных до отключения.</p>
+                  </li>
+                  <li class="func__item">
+                    <div class="func__item-top flex aic">
+                      <div class="func__icon"><img src="img/func/15.png" alt=""/></div>
+                      <div class="func__title">Режим охлаждения</div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-tabs-content__item">
+                <div class="specifications">
+                  <div class="specifications__item">
+                    <div class="specifications__title">Модель</div>
+                    <table class="specifications__table">
+                      <tbody>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Внутренний блок</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Наружный блок</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="specifications__table">
+                      <tbody>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Производительность вентилятора,м³/ч</td>
+                          <td class="specifications__col">470</td>
+                          <td class="specifications__col">470</td>
+                          <td class="specifications__col">470</td>
+                          <td class="specifications__col">470</td>
+                          <td class="specifications__col">470</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__title">Коэффициент энергоэффективности, Вт/Вт</div>
+                    <table class="specifications__table">
+                      <tbody>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Охлаждение (EER)</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Нагрев (COP)</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__title">Потребляемая мощность, кВт</div>
+                    <table class="specifications__table">
+                      <tbody>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Охлаждение</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Нагрев</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                      </tbody>
+                      <table class="specifications__table">
+                        <tbody>
+                          <tr class="specifications__row flex">
+                            <td class="specifications__col specifications__col--title">Охлаждение</td>
+                            <td class="specifications__col grow">220 – 240/50/1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </table>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__title">Наружный блок</div>
+                    <table class="specifications__table">
+                      <tbody>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">ТМ компрессора</td>
+                          <td class="specifications__col grow">GREE</td>
+                        </tr>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Уровень звукового давления, дБ(А)</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                        <tr class="specifications__row flex">
+                          <td class="specifications__col specifications__col--title">Габаритные размеры, Ш×В×Г, мм</td>
+                          <td class="specifications__col">KFR20MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                          <td class="specifications__col">KFR25MW</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="detail-tabs-content__item">
+                <div class="documentation">
+                  <div class="documentation__title">Документация</div>
+                  <div class="detail-tabs__desc">
+                    <p>Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик. </p>
+                    <p>Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.</p>
+                  </div>
+                  <ul class="documentation__list">
+                    <li class="documentation__item"><a class="documentation__link flex" href=""><i class="i-pdf"></i>
+                        <div class="documentation__item-right">
+                          <p>Официальное письмо. Модельный ряд Pioneer полупром сплиты</p><span>3,4 мб</span>
+                        </div></a></li>
+                    <li class="documentation__item"><a class="documentation__link flex" href=""><i class="i-pdf"></i>
+                        <div class="documentation__item-right">
+                          <p>Каталог Pioneer. Бытовое и полупромышленное оборудование (2019 г.)</p><span>3,4 мб</span>
+                        </div></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="other-products">
+        <div class="background-line">
+          <div class="background-line__item background-line__item-1"></div>
+          <div class="background-line__item background-line__item-2"></div>
+          <div class="background-line__item background-line__item-3"></div>
+          <div class="background-line__item background-line__item-4"></div>
+          <div class="background-line__item background-line__item-5"></div>
+          <div class="background-line__item background-line__item-6"></div>
+          <div class="background-line__item background-line__item-7"></div>
+        </div>
+        <div class="detail__container">
+          <h2>Другие бытовые кондиционеры Pioneer</h2>
+          <ul class="other-products__list flex-wrap">
+            <li class="other-products__item"><a class="other-products__link" href="">
+                <div class="other-products__img"><img src="img/other/1.png" alt=""/></div>
+                <h3 class="other-products__title">Серия «Fortis»</h3></a></li>
+            <li class="other-products__item"><a class="other-products__link" href="">
+                <div class="other-products__img"><img src="img/other/2.png" alt=""/></div>
+                <h3 class="other-products__title">Серия «Vector»</h3></a></li>
+            <li class="other-products__item"><a class="other-products__link" href="">
+                <div class="other-products__img"><img src="img/other/3.png" alt=""/></div>
+                <h3 class="other-products__title">Серия «Axioma»</h3></a></li>
+            <li class="other-products__item"><a class="other-products__link" href="">
+                <div class="other-products__img"><img src="img/other/4.png" alt=""/></div>
+                <h3 class="other-products__title">Серия «Pacific»</h3></a></li>
+            <li class="other-products__item"><a class="other-products__link" href="">
+                <div class="other-products__img"><img src="img/other/5.png" alt=""/></div>
+                <h3 class="other-products__title">Мульти-сплит системы</h3></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row flex-wrap">
+          <div class="footer__col footer__col_copyright"><a href=""><img src="img/icon/logo-footer.svg" alt=""/></a>
+            <p>© 2019 Pioneer.<br>Все права защищены</p>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">О бренде</a></li>
+              <li class="footer__item"><a href="">История</a></li>
+              <li class="footer__item"><a href="">Статьи</a></li>
+              <li class="footer__item"><a href="">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Каталог</a></li>
+              <li class="footer__item"><a href="">Бытовые кондиционеры</a></li>
+              <li class="footer__item"><a href="">Полупромышленные кондиционеры</a></li>
+              <li class="footer__item"><a href="">Мультизональные системы VRF</a></li>
+              <li class="footer__item"><a href="">Оборудование для телекоммуникаций</a></li>
+              <li class="footer__item"><a href="">Оборудование для увлажнения</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Клиентам</a></li>
+              <li class="footer__item"><a href="">Сервис</a></li>
+              <li class="footer__item"><a href="">Контакты</a></li>
+              <li class="footer__item"><a href="">Прайс-лист для дилеров</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Архив серий</a></li>
+              <li class="footer__item"><a href="">Бытовые кондиционеры</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <ul class="footer__list">
+              <li class="footer__item">Контактная информация</li>
+              <li class="footer__item"> <a class="flex aic" href="tel:8 (800) 200 02 40"><i class="i-phone"></i><span>8 (800) 200 02 40</span></a></li>
+              <li class="footer__item"> <a class="flex aic" href="mailto:info@pioneer-air.ru"><i class="i-mail"></i><span>info@pioneer-air.ru</span></a></li>
+            </ul>
+            <div class="footer__dev"><a class="flex-wrap aic" href="https://www.alkodesign.ru/" target="_blank"><span>Разработка сайта:</span><img src="img/alko.svg" alt=""/></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

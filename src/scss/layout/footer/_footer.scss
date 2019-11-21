@@ -1,0 +1,99 @@
+.footer{
+    background-color: #000000;
+    padding: 40px 0;
+    @include media(1200){
+        padding-bottom: 0;
+    }
+    &__row{
+        justify-content: space-between;
+        margin: 0 -15px;
+        @include media(1200){
+            justify-content: flex-start;
+        }
+        @include media(768){
+            margin: 0;
+        }
+    }
+    &__col{
+        padding: 0 15px;
+        @include media(1200){
+            width: 25%;
+            margin-bottom: 50px;
+        }
+        @include media(900){
+            width: 50%;
+        }
+        @include media(768){
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        &_copyright{
+            @include media(900){
+                width: 100%;
+            }
+            a{
+                display: block;
+                margin-bottom: 30px;
+            }  
+            p{
+                color: #777776;
+                font-size: 12px;
+                letter-spacing: 0.15px;
+                line-height: 15px;
+            }
+        }
+        &_contacts{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__list{
+        &:nth-of-type(2){
+            margin-top: 40px;
+        }
+    }
+    &__item{
+        margin-bottom: 16px;   
+        color: #ffffff;
+        letter-spacing: 0.2px;
+        line-height: 24px;     
+        &:first-child{
+            color: #777776;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            line-height: 24px; 
+            a{
+                color: #777776;
+                font-weight: 600;
+                letter-spacing: 0.2px;
+                line-height: 24px;     
+            }
+        }
+        a{
+            display: flex;
+            max-width: 280px;
+            color: #ffffff;
+            letter-spacing: 0.2px;
+            line-height: 24px; 
+            &:hover{
+                color: $red;
+            } 
+            i{
+                margin-right: 13px; 
+                font-size: 24px; 
+            }
+        }
+    }
+    &__dev{
+        margin-top: auto;
+        a{
+            color: #ffffff;
+            letter-spacing: 0.2px;
+            line-height: 24px;
+            span{
+                margin-right: 20px; 
+            }
+        }
+    }
+}

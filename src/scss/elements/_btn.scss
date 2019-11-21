@@ -1,0 +1,22 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 240px;
+    min-height: 60px;
+    width: 100%;
+    cursor: pointer;
+    word-break: break-word;
+    transition: .3s;
+    &-border{
+        background-color: #ffffff;  
+        border: 1px solid $red;
+        color: #9e0a0e;
+        font-weight: 700;
+        letter-spacing: 0.24px;
+        &:hover{
+            background: $red;
+            color: white;
+        }
+    }
+}

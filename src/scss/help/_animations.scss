@@ -1,0 +1,24 @@
+.fadeInLeft{
+    animation: fadeInLeft 1s;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes animateBackTitle{
+    0%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 0.1;
+    }
+}

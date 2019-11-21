@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            section.detail
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .container
+                    include _b-back
+                .detail-product
+                    .detail-product__container
+                        .detail-product__row.flex-wrap
+                            .detail-product__col.detail-product__col--slider
+                                .detail-slider.flex-wrap.aic
+                                    .detail-preview
+                                        .detail-preview__arrow.detail-preview__arrow--top
+                                            i.i-arrow--top
+                                        .detail-preview__container.swiper-container.js-preview-detail     
+                                            ul.detail-preview__list.swiper-wrapper
+                                                li.detail-preview__item.active.swiper-slide
+                                                    img(src="img/pr/1.png", alt="")   
+                                                li.detail-preview__item.swiper-slide
+                                                    img(src="img/pr/1.png", alt="") 
+                                                li.detail-preview__item.swiper-slide
+                                                    img(src="img/pr/1.png", alt="") 
+                                                li.detail-preview__item.swiper-slide
+                                                    img(src="img/pr/1.png", alt="")  
+                                        .detail-preview__arrow.detail-preview__arrow--bottom
+                                            i.i-arrow--bottom
+                                    .detail-slider__current.swiper-container.js-current-detail
+                                        ul.detail-slider__list.swiper-wrapper
+                                            li.detail-slider__item.swiper-slide
+                                                img(src="img/pr/1.png", alt="")  
+                                            li.detail-slider__item.swiper-slide
+                                                img(src="img/pr/1.png", alt="")  
+                                            li.detail-slider__item.swiper-slide
+                                                img(src="img/pr/1.png", alt="") 
+                                            li.detail-slider__item.swiper-slide
+                                                img(src="img/pr/1.png", alt="") 
+                            .detail-product__col.detail-product__col--text
+                                .detail-product__title Сплит система Pioneer
+                                .detail-product__series Серия Artis
+                                .detail-product__text
+                                    p Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик.
+                                    p Тихий режим работы и ультранизкий уровень шума – до 23 дБ(А), лучшая длина трасс и перепад высот – все это удачно совмещено в новой серии.
+                                a(href="").btn.btn-border где купить
+                .detail-tabs
+                    .detail__container
+                        .detail-tabs__wrapper
+                            ul.detail-tabs__list.flex.js-detail-tabs
+                                li.detail-tabs__item.detail-tabs__item--active.active
+                                    a(href="").detail-tabs__link Описание
+                                li.detail-tabs__item
+                                    a(href="").detail-tabs__link Функции
+                                li.detail-tabs__item
+                                    a(href="").detail-tabs__link Технические характеристики
+                                li.detail-tabs__item
+                                    a(href="").detail-tabs__link Документация 
+                        ul.detail-tabs-content
+                            li.detail-tabs-content__item.active
+                                .detail-tabs__desc
+                                    p Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик.
+                                    p Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.  
+                                .detail__list-wrapper
+                                    .detail__list-title Особенности серии:
+                                    ul.detail__list
+                                        li.detail__item.flex
+                                            .detail__item-count 01
+                                            p Ультранизкий уровень шума внутреннего блока — 23 дБ(А)
+                                        li.detail__item.flex
+                                            .detail__item-count 02
+                                            p Энергоэффективность класса А способствует низкому расходу энергии и сокращают затраты на ее потребление.
+                                        li.detail__item.flex
+                                            .detail__item-count 03
+                                            p Дизайн — современная форма и компактные размеры внутреннего блока делают модели этой серии идеальным решением для помещений любого дизайна.
+                                        li.detail__item.flex
+                                            .detail__item-count 04
+                                            p Режим I feel позволяет устанавливать комфортную температуру именно в том месте, где находится пользователь.
+                                        li.detail__item.flex
+                                            .detail__item-count 05
+                                            p Интеллектуальный прогрев перед началом работы исключает попадание на пользователя холодного воздуха.
+                                        li.detail__item.flex
+                                            .detail__item-count 06
+                                            p Усиленная фильтрация: сочетание высокоэффективных фильтров и функции Cold Plasma позволяет уничтожать бактерии, вирусы, пыльцу, болезнетворные микроорганизмы, а также позволяет дезодорировать воздух.
+                                        li.detail__item.flex
+                                            .detail__item-count 07
+                                            p Автоочистка и автопросушка внутреннего блока исключают возникновение плесени и запахов во внутреннем блоке.
+                                        li.detail__item.flex
+                                            .detail__item-count 08
+                                            p Антикоррозийное покрытие теплообменников Blue fin  защищает теплообменник от негативного воздействия окружающей среды и обеспечивает долговременную бесперебойную работу наружного блока.
+                                        li.detail__item.flex
+                                            .detail__item-count 09
+                                            p Режим турбо позволяет быстро достичь заданной температуры.
+                            li.detail-tabs-content__item
+                                .detail-tabs__desc
+                                    p Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик. 
+                                    p Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.
+                                ul.func__list.flex-wrap
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/1.png", alt="")
+                                            .func__title I-Feel
+                                        p Функция I Feel ориентирует датчик измерения температуры в помещении с внутреннего блока сплит-системы на пульт управления. С этой функцией кондиционер способен поддерживать нужную температуру именно в том месте, где находится пульт управления сплит-системой, не меняя при этом направления воздушного потока.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/2.png", alt="")
+                                            .func__title Информативный дисплей пульта
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/3.png", alt="")
+                                            .func__title Компактный дизайн
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/4.png", alt="")
+                                            .func__title Автопереключение рабочих режимов
+                                        p В зависимости от заданного параметра и фактической температуры в помещении контроллер автоматически переключает кондиционер на работу в режиме нагрева или охлаждения.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/5.png", alt="")
+                                            .func__title Режим комфортного сна
+                                        p Функция создания повышенного комфорта, обеспечивающая работу установки в соответствии с определенным ритмом изменения температуры в помещении.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/6.png", alt="")
+                                            .func__title Интеллектуальная разморозка
+                                        p Действует для разморозки наружного блока в случае необходимости, а не по заданному расписанию для снижения энергозатрат.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/7.png", alt="")
+                                            .func__title Светодиодный дисплей
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/8.png", alt="")
+                                            .func__title Режим турбо
+                                        p Предназначен для охлаждения или нагрева помещения до уровня заданной температуры в кратчайший срок.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/9.png", alt="")
+                                            .func__title Автоматическое регулирование воздушного потока
+                                        p Величина воздушного потока регулируется микропроцессором в соответствии с изменением температуры в помещении.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/10.png", alt="")
+                                            .func__title Мультискоростной вентилятор
+                                        p Позволяет менять скорость вентилятора для достижения или поддержания заданной температуры и желаемого уровня шума.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/11.png", alt="")
+                                            .func__title Режим вентиляции
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/12.png", alt="")
+                                            .func__title Режим осушения
+                                        p Система эффективно осушает воздух, не допускает при этом резкого понижения температуры.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/13.png", alt="")
+                                            .func__title Таймер однократного ВКЛ/ВЫКЛ
+                                        p Позволяет задавать одну точку ВКЛ/ВЫКЛ кондиционера.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/14.png", alt="")
+                                            .func__title Автоматический перезапуск
+                                        p Эта функция обеспечивает автоматический перезапуск кондиционера при подаче электропитания после временного сбоя. Управление работой осуществляется исходя из параметров, установленных до отключения.
+                                    li.func__item
+                                        .func__item-top.flex.aic
+                                            .func__icon
+                                                img(src="img/func/15.png", alt="")
+                                            .func__title Режим охлаждения
+                            li.detail-tabs-content__item
+                                .specifications
+                                    .specifications__item
+                                        .specifications__title Модель
+                                        table.specifications__table
+                                            tbody
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Внутренний блок
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Наружный блок
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                        table.specifications__table
+                                            tbody
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Производительность вентилятора,м³/ч
+                                                    td.specifications__col 470
+                                                    td.specifications__col 470
+                                                    td.specifications__col 470
+                                                    td.specifications__col 470
+                                                    td.specifications__col 470
+                                    .specifications__item
+                                        .specifications__title Коэффициент энергоэффективности, Вт/Вт
+                                        table.specifications__table
+                                            tbody
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Охлаждение (EER)
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Нагрев (COP)
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                    .specifications__item
+                                        .specifications__title Потребляемая мощность, кВт
+                                        table.specifications__table
+                                            tbody
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Охлаждение
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Нагрев
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                            table.specifications__table
+                                                tbody
+                                                    tr.specifications__row.flex
+                                                        td.specifications__col.specifications__col--title Охлаждение
+                                                        td.specifications__col.grow 220 – 240/50/1
+                                    .specifications__item
+                                        .specifications__title Наружный блок
+                                        table.specifications__table
+                                            tbody
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title ТМ компрессора
+                                                    td.specifications__col.grow GREE
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Уровень звукового давления, дБ(А)
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                tr.specifications__row.flex
+                                                    td.specifications__col.specifications__col--title Габаритные размеры, Ш×В×Г, мм
+                                                    td.specifications__col KFR20MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                                                    td.specifications__col KFR25MW
+                            li.detail-tabs-content__item
+                                .documentation
+                                    .documentation__title Документация
+                                    .detail-tabs__desc
+                                        p Кондиционеры серии Artis это гармоничное сочетание стильного дизайна, компактных размеров и высоких стандартов технических характеристик. 
+                                        p Тихий режим работы и ультранизкий уровень шума — до 23 дБ(А), лучшая длина трасс и перепад высот — все это удачно совмещено в новой серии.
+                                    ul.documentation__list
+                                        li.documentation__item
+                                            a(href="").documentation__link.flex
+                                                i.i-pdf
+                                                .documentation__item-right
+                                                    p Официальное письмо. Модельный ряд Pioneer полупром сплиты
+                                                    span 3,4 мб
+                                        li.documentation__item
+                                            a(href="").documentation__link.flex
+                                                i.i-pdf
+                                                .documentation__item-right
+                                                    p Каталог Pioneer. Бытовое и полупромышленное оборудование (2019 г.)
+                                                    span 3,4 мб
+
+
+            section.other-products
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .detail__container
+                    h2 Другие бытовые кондиционеры Pioneer
+                    ul.other-products__list.flex-wrap
+                        li.other-products__item
+                            a(href="").other-products__link
+                                .other-products__img
+                                    img(src="img/other/1.png", alt="")
+                                h3.other-products__title Серия «Fortis»
+                        li.other-products__item
+                            a(href="").other-products__link
+                                .other-products__img
+                                    img(src="img/other/2.png", alt="")
+                                h3.other-products__title Серия «Vector»
+                        li.other-products__item
+                            a(href="").other-products__link
+                                .other-products__img
+                                    img(src="img/other/3.png", alt="")
+                                h3.other-products__title Серия «Axioma»
+                        li.other-products__item
+                            a(href="").other-products__link
+                                .other-products__img
+                                    img(src="img/other/4.png", alt="")
+                                h3.other-products__title Серия «Pacific»
+                        li.other-products__item
+                            a(href="").other-products__link
+                                .other-products__img
+                                    img(src="img/other/5.png", alt="")
+                                h3.other-products__title Мульти-сплит системы
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    

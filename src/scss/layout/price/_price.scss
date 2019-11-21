@@ -1,0 +1,99 @@
+.price{
+    padding: 230px 0 120px;
+    position: relative;
+    overflow: hidden;
+    &__row{
+        box-shadow: 0 2px 16px #d1d3d4;
+        background-color: #ffffff;
+        padding: 120px;
+        @include media(1200){
+            padding: 60px;
+        }
+        @include media(768){
+            padding: 50px 30px 30px;
+        }
+    } 
+    &__col{
+        width: 50%;
+        @include media(950){
+            width: 100%;
+        }
+        &--form{
+            background-color: #f8f9fa;
+            padding: 80px 60px 60px;   
+            @include media(950){
+                order: -1;
+                margin-bottom: 32px;
+            }
+            @include media(768){
+                background: white;
+                padding: 0;
+            }
+        }
+        h1{
+            color: $base;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;   
+            position: relative;
+            margin: 35px 0 80px;
+            @include media(950){
+                margin-bottom: 50px;
+            }
+            @include media(768){
+                font-size: 30px;
+                line-height: normal;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 120px;
+                height: 120px;
+                background-color: #f77d80;
+                opacity: 0.1;
+                left: -60px;
+                top: 50%;
+                transform: translateY(-50%);
+            }  
+        }
+        &-txt{
+            max-width: 360px;
+            @include media(950){
+                max-width: 100%;
+            }
+            p{
+                color: $base;
+                letter-spacing: 0.27px;
+                line-height: 24px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+    &__info{
+        i{
+            margin-right: 20px;  
+            margin-top: 3px;
+        }
+        &-right{
+            p{
+                margin-bottom: 13px;
+                max-width: 316px;
+                color: $base;
+                font-size: 14px;
+                line-height: 24px;
+                @include media(950){
+                    max-width: 100%;
+                }
+            }
+            a{
+                color: #9e0a0e;
+                font-size: 26px;
+                font-weight: 500;   
+                @include media(768){
+                    font-size: 18px;
+                }  
+            }
+        }
+    }
+}

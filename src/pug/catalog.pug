@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            section.catalog
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .back-title pioneer
+                .container.container-small
+                    .catalog-top.flex-wrap.aic
+                        h1 Каталог кондиционеров Pioneer
+                        .catalog-top__img
+                            img(src="img/catalog/catalog-top.webp", alt="")
+                    ul.catalog-cat.flex-wrap
+                        li.catalog-cat__item
+                            a(href="/catalog-item.html").catalog-cat__link
+                                .catalog-cat__icon 
+                                    img(src="img/catalog/1.svg", alt="")
+                                .catalog-cat__title Бытовые кондиционеры
+                        li.catalog-cat__item
+                            a(href="/catalog-item.html").catalog-cat__link
+                                .catalog-cat__icon 
+                                    img(src="img/catalog/2.svg", alt="")
+                                .catalog-cat__title Полупромышленные кондиционеры
+                        li.catalog-cat__item
+                            a(href="/catalog-item.html").catalog-cat__link
+                                .catalog-cat__icon 
+                                    img(src="img/catalog/3.svg", alt="")
+                                .catalog-cat__title Мультизональные системы VRF
+                        li.catalog-cat__item
+                            a(href="/catalog-item.html").catalog-cat__link
+                                .catalog-cat__icon 
+                                    img(src="img/catalog/4.svg", alt="")
+                                .catalog-cat__title Оборудование для телекоммуникаций
+                        li.catalog-cat__item
+                            a(href="/catalog-item.html").catalog-cat__link
+                                .catalog-cat__icon 
+                                    img(src="img/catalog/5.svg", alt="")
+                                .catalog-cat__title Оборудование для  увлажнения
+            include _selection
+            include _reviews
+
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    
