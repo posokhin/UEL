@@ -1,0 +1,41 @@
+.reference{
+    &__content{
+        margin-bottom: 10px;
+        @include last();
+    }
+    &__title{
+        color: #9e0a0e;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;      
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #9e0a0e;
+        @include media(768){
+            font-size: 20px;
+            line-height: normal;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+        }
+    }
+    &__item{
+        width: 50%;
+        margin-bottom: 30px;
+        @include media(768){
+            width: 100%;
+        }
+        &-title{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;  
+            margin: 18px 0 12px;      
+        }
+        &-city{
+            font-size: 13px;
+            letter-spacing: 0.14px;    
+        }
+    }
+    &__link{
+        color: $base;
+    }
+}

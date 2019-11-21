@@ -788,6 +788,13 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .post__info i{min-width:38px;height:38px}
 .post__info-txt{margin:0 0 0 25px;font-size:16px;letter-spacing:.18px;line-height:28px}
 .post__info-txt a{color:#9e0a0e;font-weight:700}
+.reference__content{margin-bottom:10px}
+.reference__content:last-child{margin-bottom:0}
+.reference__title{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #9e0a0e}
+.reference__item{width:50%;margin-bottom:30px}
+.reference__item-title{font-size:16px;font-weight:700;line-height:22px;margin:18px 0 12px}
+.reference__item-city{font-size:13px;letter-spacing:.14px}
+.reference__link{color:#212529}
 @media screen and (min-width:769px){
 .primary__right-top-pagination{display:none}
 }
@@ -1016,6 +1023,8 @@ section{padding:50px 0!important}
 .post__list li{font-size:14px;line-height:20px}
 .post__info{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:20px}
 .post__info-txt{margin:16px 0 0 0}
+.reference__title{font-size:20px;line-height:normal;margin-bottom:16px;padding-bottom:16px}
+.reference__item{width:100%}
 }
 @media screen and (max-width:700px){
 .banner{overflow:hidden}
