@@ -759,6 +759,16 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .banner__pagination-title{position:absolute;bottom:-24px;color:#212529;font-size:14px;font-weight:700;line-height:24px}
 .sertificates .primary__left-title,.sertificates h1{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;padding-bottom:30px;border-bottom:1px solid #9e0a0e}
 .sertificates__desc p{color:#212529;font-size:18px;letter-spacing:.27px;line-height:32.36px;margin:45px 0}
+.posts__item{margin-bottom:40px}
+.posts__item:last-child{margin-bottom:0}
+.posts__link{border:1px solid #e6e7e8}
+.posts__link:hover{-webkit-box-shadow:0 2px 16px #d1d3d4;box-shadow:0 2px 16px #d1d3d4}
+.posts__image{width:35%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-right:20px}
+.posts__image img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.posts__right{width:65%;padding:32px 40px 44px 20px}
+.posts__cat{color:#808284;font-size:14px;font-weight:700;line-height:24px}
+.posts__title{color:#212529;font-size:24px;font-weight:700;line-height:32px;margin:16px 0}
+.posts__text p{color:#212529;font-size:14px;letter-spacing:.3px;line-height:20px}
 @media screen and (min-width:769px){
 .primary__right-top-pagination{display:none}
 }
@@ -871,6 +881,8 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .price__col .primary__left-title,.price__col h1{margin-bottom:50px}
 .price__col-txt{max-width:100%}
 .price__info-right p{max-width:100%}
+.posts__image{width:100%;height:300px;padding:0}
+.posts__right{width:100%;padding:20px}
 }
 @media screen and (max-width:900px){
 .primary__blocks-item{width:100%;margin-bottom:20px}
@@ -973,6 +985,7 @@ section{padding:50px 0!important}
 .pagination__item{margin-right:10px}
 .pagination__link{padding:6px}
 .sertificates__desc p{font-size:16px;line-height:22px;margin:24px 0}
+.posts__title{font-size:18px;line-height:22px}
 }
 @media screen and (max-width:700px){
 .banner{overflow:hidden}
@@ -1002,6 +1015,7 @@ section{padding:50px 0!important}
 @media screen and (max-width:550px){
 .service-city__item{width:100%}
 .service-city__link{padding:8px 0}
+.posts__image{height:200px}
 }
 @media screen and (max-width:500px){
 .primary__right-top{top:30%}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            section.about
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .back-title.back-title--animate pioneer
+                .container
+                    .about__row.flex-wrap
+                        .about__col.about__col--sidebar
+                            include _aside
+                        .about__col.about__col--content
+                            .about__content
+                                .detail-tabs__wrapper.about__tabs
+                                    ul.detail-tabs__list.flex
+                                        li.detail-tabs__item
+                                            a(href="").detail-tabs__link О бренде
+                                        li.detail-tabs__item.detail-tabs__item--active.active
+                                            a(href="").detail-tabs__link Статьи
+                                        li.detail-tabs__item
+                                            a(href="").detail-tabs__link Отзывы
+                                        li.detail-tabs__item
+                                            a(href="").detail-tabs__link Референс-лист 
+                                        li.detail-tabs__item
+                                            a(href="").detail-tabs__link Сертификаты
+                                .posts
+                                    ul.posts__list
+                                        -for(var i = 0; i < 3; i++)
+                                            li.posts__item
+                                                a(href="").posts__link.flex-wrap
+                                                    .posts__image
+                                                        img(src="img/posts/1.png", alt="")
+                                                    .posts__right
+                                                        .posts__cat / Подбор
+                                                        .posts__title Расчет кондиционера для помещения
+                                                        .posts__text
+                                                            p Современное оборудование способно не только охлаждать, но и нагревать или осушать воздух, поэтому удается добиться максимально благоприятного микроклимата, комфортного вне зависимости от сезона.
+                                            li.posts__item
+                                                a(href="").posts__link.flex-wrap
+                                                    .posts__image
+                                                        img(src="img/posts/2.png", alt="")
+                                                    .posts__right
+                                                        .posts__cat / Подбор
+                                                        .posts__title Расчет кондиционера для помещения
+                                                        .posts__text
+                                                            p Современное оборудование способно не только охлаждать, но и нагревать или осушать воздух, поэтому удается добиться максимально благоприятного микроклимата, комфортного вне зависимости от сезона.
+                                            li.posts__item
+                                                a(href="").posts__link.flex-wrap
+                                                    .posts__image
+                                                        img(src="img/posts/3.png", alt="")
+                                                    .posts__right
+                                                        .posts__cat / Подбор
+                                                        .posts__title Расчет кондиционера для помещения
+                                                        .posts__text
+                                                            p Современное оборудование способно не только охлаждать, но и нагревать или осушать воздух, поэтому удается добиться максимально благоприятного микроклимата, комфортного вне зависимости от сезона.
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    
