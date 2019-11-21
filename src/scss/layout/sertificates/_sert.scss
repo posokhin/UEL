@@ -1,0 +1,24 @@
+.sertificates{
+    h1{
+        color: #9e0a0e;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;    
+        padding-bottom: 30px;
+        border-bottom: 1px solid #9e0a0e;   
+    }
+    &__desc{
+        p{
+            color: $base;
+            font-size: 18px;
+            letter-spacing: 0.27px;
+            line-height: 32.36px;    
+            margin: 45px 0;
+            @include media(768){
+                font-size: 16px;
+                line-height: 22px;
+                margin: 24px 0;
+            }
+        }
+    }
+}

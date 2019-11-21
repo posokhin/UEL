@@ -1,11 +1,20 @@
 .banner{
     margin-bottom: 200px;
     position: relative;
+    @include media(700){
+        overflow: hidden;
+    }
     &__item{
         a{
             img{
                 display: flex;
                 align-items: center;
+                height: 600px;
+                width: 100%;
+                object-fit: cover;
+                @include media(700){
+                    height: 400px;
+                }
             }
         }
     }
@@ -14,9 +23,20 @@
         overflow: visible;
         right: 240px;
         bottom: 0;
+        @include media(1250){
+            right: auto;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
         &-list{
             display: flex;
             width: 700px;
+            @include media(1250){
+                max-width: 100%;
+            }
+            @include media(700){
+                width: 320px;
+            }
         }
         &-item{
             height: 120px;
@@ -25,6 +45,9 @@
                 .banner__pagination-image{
                     background: white;
                     height: 136px;
+                    @include media(700){
+                        height: 90px;
+                    }
                 }
                 .banner__pagination-number{
                     color: #9e0a0e;  
@@ -41,6 +64,10 @@
             align-items: center;
             justify-content: center;
             background-image: linear-gradient(270deg, #e6e7e8 0%, #d1d3d4 100%);
+            @include media(700){
+                height: auto;
+                padding: 20px;
+            }
         }
         &-number{
             position: absolute;
@@ -49,6 +76,9 @@
             color: #808284;
             font-size: 12px;
             font-weight: 600;
+            @include media(700){
+                display: none;
+            }
         }
         &-progress{
             position: absolute;
@@ -72,7 +102,10 @@
             color: $base;
             font-size: 14px;
             font-weight: 700;
-            line-height: 24px;     
+            line-height: 24px;  
+            @include media(700){
+                display: none;
+            }   
         }
     }
 }

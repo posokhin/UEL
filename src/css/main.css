@@ -746,7 +746,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .pagination__link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:12px;border:1px solid #d1d3d4;color:#212529;font-size:12px;font-weight:600}
 .pagination__link:hover{border:1px solid #9e0a0e;color:#9e0a0e}
 .banner{margin-bottom:200px;position:relative}
-.banner__item a img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.banner__item a img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:600px;width:100%;-o-object-fit:cover;object-fit:cover}
 .banner__pagination{position:absolute;overflow:visible;right:240px;bottom:0}
 .banner__pagination-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:700px}
 .banner__pagination-item{height:120px;cursor:pointer}
@@ -757,6 +757,8 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .banner__pagination-progress{position:absolute;width:100%;height:4px;bottom:0;background-color:#808284}
 .banner__pagination-progress span{display:block;position:absolute;top:0;left:0;background-color:#9e0a0e;width:30%;height:100%}
 .banner__pagination-title{position:absolute;bottom:-24px;color:#212529;font-size:14px;font-weight:700;line-height:24px}
+.sertificates .primary__left-title,.sertificates h1{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;padding-bottom:30px;border-bottom:1px solid #9e0a0e}
+.sertificates__desc p{color:#212529;font-size:18px;letter-spacing:.27px;line-height:32.36px;margin:45px 0}
 @media screen and (min-width:769px){
 .primary__right-top-pagination{display:none}
 }
@@ -807,6 +809,8 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 }
 @media screen and (max-width:1250px){
 .description__col_full-width .description__content::after,.description__col_full-width .description__content::before{display:none}
+.banner__pagination{right:auto;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}
+.banner__pagination-list{max-width:100%}
 }
 @media screen and (max-width:1200px){
 .header{padding:20px 0}
@@ -968,6 +972,16 @@ section{padding:50px 0!important}
 .about__content{padding:20px}
 .pagination__item{margin-right:10px}
 .pagination__link{padding:6px}
+.sertificates__desc p{font-size:16px;line-height:22px;margin:24px 0}
+}
+@media screen and (max-width:700px){
+.banner{overflow:hidden}
+.banner__item a img{height:400px}
+.banner__pagination-list{width:320px}
+.banner__pagination-item.swiper-slide-thumb-active .banner__pagination-image{height:90px}
+.banner__pagination-image{height:auto;padding:20px}
+.banner__pagination-number{display:none}
+.banner__pagination-title{display:none}
 }
 @media screen and (max-width:650px){
 .specifications__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:20px;border-bottom:1px solid #e6e7e8}

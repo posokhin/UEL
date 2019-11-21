@@ -248,7 +248,7 @@ $(document).ready(function(){
     var sliderBannerThumb= new Swiper('.js-banner-pagination', {
         slidesPerView: 3,
         slideToClickedSlide: true,
-        allowTouchMove: false,
+        allowTouchMove: true,
         on: {
             click: function(){
                 bannerProgressStart();
