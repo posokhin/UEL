@@ -270,4 +270,45 @@ $(document).ready(function(){
         }
     });
     /* slider banner end */
+
+    /* slider post-gallery */
+    var sliderPostThumb= new Swiper('.js-post-gallery-thumb', {
+        slidesPerView:  8,
+        slideToClickedSlide: true,
+        allowTouchMove: true,
+        spaceBetween: 20,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 10
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 10
+            },
+            900: {
+                slidesPerView: 6,
+                spaceBetween: 10
+            },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 20
+            },
+        }
+    });
+    
+    var sliderPost = new Swiper('.js-post-gallery', {
+        thumbs: {
+            swiper: sliderPostThumb
+        },
+        speed: 500
+    });
+    /* slider post-gallery end */
 });

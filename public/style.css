@@ -778,7 +778,9 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .posts__title{color:#212529;font-size:24px;font-weight:700;line-height:32px;margin:16px 0}
 .posts__text p{color:#212529;font-size:14px;letter-spacing:.3px;line-height:20px}
 .post{color:#212529;padding-bottom:40px;border-bottom:1px solid #e6e7e8}
-.post .primary__left-title,.post h1{font-size:32px;font-weight:700;line-height:40px;margin-bottom:40px}
+.post .primary__left-title,.post h1{font-size:32px;font-weight:700;line-height:40px}
+.post__top{margin-bottom:40px}
+.post__top span{display:block;letter-spacing:.18px;line-height:28px;margin-top:10px}
 .post p{font-size:20px;letter-spacing:.3px;line-height:32px;margin-bottom:40px}
 .post img{margin-bottom:40px}
 .post h3{font-size:20px;font-weight:700;line-height:32px;margin-bottom:20px}
@@ -788,6 +790,13 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .post__info i{min-width:38px;height:38px}
 .post__info-txt{margin:0 0 0 25px;font-size:16px;letter-spacing:.18px;line-height:28px}
 .post__info-txt a{color:#9e0a0e;font-weight:700}
+.post__gallery{margin-bottom:40px}
+.post__gallery-current img{margin:0!important;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.post__gallery-thumb{margin:20px 0 0}
+.post__gallery-thumb-item{cursor:pointer;border:1px solid transparent;height:80px}
+.post__gallery-thumb-item img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.post__gallery-thumb-item.swiper-slide-thumb-active{border-color:#f77d80}
+.post__gallery-thumb-item img{margin-bottom:0!important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .reference__content{margin-bottom:10px}
 .reference__content:last-child{margin-bottom:0}
 .reference__title{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #9e0a0e}
@@ -930,10 +939,12 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .service__col{width:50%;margin-bottom:16px}
 .about__tabs .detail-tabs__link{padding:16px 0}
 .about__tabs .detail-tabs__item{padding:0 10px}
-.post .primary__left-title,.post h1{font-size:20px;line-height:22px;margin-bottom:24px}
+.post .primary__left-title,.post h1{font-size:20px;line-height:22px}
+.post__top{margin-bottom:24px}
 .post p{font-size:16px;line-height:22px;margin-bottom:24px}
 .post img{margin-bottom:24px}
 .post h3{font-size:18px;line-height:normal}
+.post__gallery{margin-bottom:24px}
 }
 @media screen and (max-width:850px){
 .service__content-top{margin-bottom:24px}
@@ -1041,6 +1052,9 @@ section{padding:50px 0!important}
 .specifications__col:first-child{border-top:0;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .about-reviews__item{width:50%}
 }
+@media screen and (max-width:639px){
+.post__gallery-thumb-item{height:auto}
+}
 @media screen and (max-width:600px){
 .primary__left,.primary__right{width:100%;padding:0}
 .primary__left{margin-bottom:50px}
@@ -1079,6 +1093,7 @@ section{padding:50px 0!important}
 .timeline-sublist__item--column .timeline-sublist__link{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .timeline-sublist__right{margin-left:0}
 .navigation__link span{display:none}
+.post__gallery-thumb{margin-top:5px}
 }
 @media screen and (max-width:450px){
 .about-reviews__row{margin:0}

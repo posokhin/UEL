@@ -6,12 +6,22 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 40px;   
-        margin-bottom: 40px;
         @include media(900){
             font-size: 20px;
             line-height: 22px;
-            margin-bottom: 24px;
         }   
+    }
+    &__top{
+        margin-bottom: 40px;
+        @include media(900){
+            margin-bottom: 24px;
+        }
+        span{
+            display: block;
+            letter-spacing: 0.18px;
+            line-height: 28px;
+            margin-top: 10px;     
+        }
     }
     p{
         font-size: 20px;
