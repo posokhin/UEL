@@ -5,19 +5,19 @@
     &--shadow{
         box-shadow: 0 2px 16px #d1d3d4;
     }
-    @include media(1200){
+    @include media(1000){
         padding: 20px 0;
     }
     &__col{
         &_logo{
             width: 25%;
-            @include media(1200){
-                width: 50%;
+            @include media(1000){
+                width: 150px
             }
         }
         &_list{
             width: 70%;
-            @include media(1200){
+            @include media(1000){
                 display: none;
             }
         }
@@ -28,9 +28,17 @@
             }
         }
     }
+    &__list{
+        @include media(1220){
+            justify-content: center;
+        }
+    }
     &__item{
         position: relative;
         padding: 0 30px;
+        @include media(1220){
+            padding: 0 10px;
+        }
         &:last-child{
             margin-right: 0;
         }
@@ -61,6 +69,63 @@
             i{
                 font-size: 24px;
                 color: #9e0a0e;
+                @include media(1000){
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &__toggle{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 20px;
+        @media (min-width: 1001px){
+            display: none;
+        }
+        &.active{
+            .header__toggle-btn{
+                span{
+                    display: none;
+                }
+                &::before{
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    bottom: auto;
+                    top: 0;
+                }
+            }
+        }
+        &-btn{
+            background-color: #9e0a0e;
+            position: relative;
+            width: 100%;
+            span{
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: inherit;
+            }
+            &::before,&::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: inherit;
+                position: absolute;
+                transition: .3s;
+            }    
+            &::before{
+                top: -7px;
+            }
+            &::after{
+                bottom: -7px;
             }
         }
     }

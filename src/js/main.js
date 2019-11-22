@@ -311,4 +311,27 @@ $(document).ready(function(){
         speed: 500
     });
     /* slider post-gallery end */
+
+    /* m-menu */
+    $('.header__toggle').on('click', function(){
+        $('.m-menu--main').addClass('open');
+    });
+    $('.js-close-m-menu').on('click', function(){
+        $('.m-menu').removeClass('open');
+    });
+    $('.js-open-m-menu-catalog').on('click', function(e){
+        e.preventDefault();
+        $('.m-menu--catalog').addClass('open');
+    });
+    $('.js-close-m-menu-catalog').on('click', function(){
+        $('.m-menu--catalog').removeClass('open');
+    });
+    $('.m-menu--catalog .m-menu__link').on('click', function(e){
+        e.stopPropagation();
+        if($(this).siblings('.m-menu-sublist').length){
+            e.preventDefault();
+            $(this).closest('.m-menu__item').toggleClass('active');
+        }
+    });
+    /* m-menu end*/
 });
