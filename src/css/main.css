@@ -513,7 +513,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .b-back{padding:40px 0 70px}
 .b-back a{color:#212529;font-size:14px;font-weight:500;letter-spacing:.21px}
 .b-back a i{margin-right:20px}
-.detail{overflow-x:hidden;position:relative}
+.detail{position:relative}
 .detail__container{max-width:990px;margin:0 auto;padding:0 40px;position:relative}
 .detail-product{margin-bottom:140px}
 .detail-product__container{max-width:1420px;margin:0 auto;padding:0 40px}
@@ -533,6 +533,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .detail__desc h2{color:#9e0a0e;font-size:24px;font-weight:700;line-height:32px;margin-bottom:24px}
 .detail__desc-list{margin-bottom:28px;list-style:disc;list-style-position:inside}
 .detail__desc-list li{color:#212529;font-size:20px;letter-spacing:.3px;line-height:32px}
+.detail-slider__item{padding:0 10px}
 .detail-slider__current{width:60%}
 .detail-preview{width:80px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .detail-preview__arrow{cursor:pointer}
