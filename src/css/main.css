@@ -846,6 +846,14 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .m-menu-sublist__item:last-child{margin-bottom:0}
 .m-menu-sublist__item.active .m-menu-sublist__link{color:#9e0a0e}
 .m-menu-sublist__link{color:#212529;font-size:14px;letter-spacing:.3px;line-height:20px}
+.search-page{position:relative;padding:230px 120px}
+.search-page__content{padding:120px;-webkit-box-shadow:0 2px 16px #d1d3d4;box-shadow:0 2px 16px #d1d3d4;background-color:#fff}
+.search-page__top form{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.search-page__top form input{height:45px;width:80%;padding-left:16px;border:1px solid #9e0a0e;border-right:0}
+.search-page__top form button{width:20%;height:45px;min-height:0}
+.search-page__result{margin:32px 0}
+.search-page__result-item{padding:16px 0;border-bottom:1px solid #9e0a0e}
+.search-page__result-title{color:#212529;font-size:24px;font-weight:700;line-height:32px;margin-bottom:16px;display:block}
 @media screen and (min-width:769px){
 .primary__right-top-pagination{display:none}
 }
@@ -915,6 +923,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .footer__row{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .footer__col{width:25%;margin-bottom:50px}
 .price__row{padding:60px}
+.search-page{padding:60px 0}
 }
 @media screen and (max-width:1170px){
 .service__content{padding:50px}
@@ -957,6 +966,7 @@ h2{font-size:40px;font-weight:700;line-height:48px}
 .reviews__right{width:100%;padding:0}
 .reviews__right-list{max-width:500px}
 .service-city__item{width:50%}
+.search-page__content{padding:60px}
 }
 @media screen and (max-width:950px){
 .detail-product{margin-bottom:50px}
@@ -1087,6 +1097,11 @@ section{padding:50px 0!important}
 .reference__title{font-size:20px;line-height:normal;margin-bottom:16px;padding-bottom:16px}
 .reference__item{width:100%}
 }
+@media screen and (max-width:767px){
+.search-page__content{padding:30px}
+.search-page__result{margin:16px 0}
+.search-page__result-title{font-size:18px;line-height:normal;margin-bottom:8px}
+}
 @media screen and (max-width:700px){
 .banner{overflow:hidden}
 .banner__item a img{height:400px}
@@ -1144,6 +1159,8 @@ section{padding:50px 0!important}
 .timeline-sublist__right{margin-left:0}
 .navigation__link span{display:none}
 .post__gallery-thumb{margin-top:5px}
+.search-page__top form input{width:100%;border:1px solid #9e0a0e;border-bottom:0}
+.search-page__top form button{width:100%;max-width:100%}
 }
 @media screen and (max-width:450px){
 .about-reviews__row{margin:0}

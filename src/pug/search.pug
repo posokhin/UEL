@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title UEL
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            include _header
+            section.search-page
+                .background-line
+                    .background-line__item.background-line__item-1
+                    .background-line__item.background-line__item-2
+                    .background-line__item.background-line__item-3
+                    .background-line__item.background-line__item-4
+                    .background-line__item.background-line__item-5
+                    .background-line__item.background-line__item-6
+                    .background-line__item.background-line__item-7
+                .back-title.back-title--animate pioneer
+                .container.container-small
+                    .search-page__content
+                        .search-page__top
+                            form(action="")
+                                input(type="text" placeholder="Что будем искать?")
+                                button(type="submit").btn.btn-border Искать
+                        ul.search-page__result
+                            -for(var i = 0; i < 10; i++)
+                                li.search-page__result-item
+                                    a(href="").search-page__result-title Сплит-система Pioneer
+                                    p В настенных кондиционерах последних моделей бренда реализованы инновационные технологии, системы и функции, облаченные в стильный дизайн. Кроме стандартных режимов работы – охлаждения и обогрева, сплит-системы Пионер осуществляют:   
+                        include _pagination
+        include _footer
+        script(src="js/jquery.min.js")
+        script(src="js/ion.rangeSlider.min.js")
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")
+                    

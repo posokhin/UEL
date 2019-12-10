@@ -7,7 +7,8 @@ let gulp = require('gulp'),
     pug = require('gulp-pug'),
     cleanCSS = require('gulp-clean-css'),
     gcmq = require('gulp-group-css-media-queries'),
-    cssnano = require('gulp-cssnano');
+    cssnano = require('gulp-cssnano'),
+    changed = require('gulp-changed');
     
     
 
@@ -47,7 +48,8 @@ gulp.task('concat', function() {
 
 
 gulp.task('pug', function() {
-    return gulp.src('./src/pug/**/*.pug')
+    return gulp.src('./src/pug/*.pug')
+    .pipe(changed('public/', { extension: '.html' }))
     .pipe(pug({
         pretty: true
     }))
